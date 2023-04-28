@@ -1,0 +1,18 @@
+<div class="min-h-screen w-screen fixed flex flex-col">
+    <div class="flex flex-row items-center justify-start h-[8.5rem] bg-transparent">
+        <div class="flex flex-col text-[2.85rem] mt-1 grow align-middle text-left mx-10 tracking-tight font-extrabold font-['Ubuntu_Mono']">
+            <p class="text-[#05548E]">Vishwajyot Student Council Elections (2023-24)</p>
+            <div class="flex flex-row text-[2.3rem] space-x-4 -mt-2">
+                <p class="text-[#05548E] align-middle font-semibold">House - </p>
+                <p class="tracking-wider align-middle font-semibold mt-0.5 ml-0.5 text-[2.2rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]" [ngStyle]="{'color': houseColor}">{{houseText}}</p>
+            </div>
+        </div>
+        <img src="assets/vjhs-logo-disc.png" class="mx-5 -my-10 aspect-auto mix-blend-multiply w-max">
+    </div>
+    <div class="my-[8.5rem] bg-gray-300 h-screen w-screen fixed bg-cover" [style.background-image]="'linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(assets/'+houseBackgroundImage+')'">
+        <div class="h-[78vh] my-10 mx-16 rounded-2xl shadow-2xl shadow-gray-800/70 bg-white/10 backdrop-blur-lg overflow-hidden" >
+            <app-voting-panel class="h-full w-full" house="{{houseNameCapitalized}}"></app-voting-panel>
+        </div>
+    </div>
+</div>
+

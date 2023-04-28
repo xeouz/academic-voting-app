@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "vjhs-voting"
+  },
+  "targets": {
+    "vjhs-voting": {
+      "hosting": {
+        "voting-app": [
+          "vjhs-voting"
+        ]
+      }
+    }
+  }
+}

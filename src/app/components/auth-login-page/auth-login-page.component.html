@@ -1,0 +1,9 @@
+<div class="bg-gray-100/10 h-screen w-screen flex justify-center items-center">
+    <div class="h-[55%] w-[35%] bg-gradient-to-b to-gray-500/30 shadow-black/20 from-gray-200/20 flex flex-col items-center rounded-xl shadow-xl">
+        <p class="text-6xl font-['Ubuntu_Mono'] mx-7 mt-10 mb-2 font-extrabold tracking-wide">Authorizer Login</p>
+        <div class="h-1 px-44 my-3 rounded-xl bg-black/30"></div>
+        <p class="text-3xl font-['Ubuntu_Mono'] mx-7 mt-10 mb-2 font-semibold">Enter your password:</p>
+        <input (keyup)="onInputKeyUp($event)" [ngStyle]="{'border-color': invalidPassword==false?'rgba(75, 85, 99, 1)':'rgba(239, 68, 68, 0.7)'}" class="outline-none red-500 border-2 font-['Poppins'] placeholder-gray-500 px-2 scale-125 my-5 w-[45%] h-[6%] rounded-lg bg-white/40" placeholder="Password...">
+        <button (click)="onConfirmClicked()" class="mt-10 bg-gray-200/70 rounded-lg shadow-lg shadow-gray-700/30 text-3xl font-['Ubuntu_Mono'] font-bold w-[50%] h-[12%] transition-transform hover:scale-110 hover:shadow-xl hover:shadow-gray-700/20">Confirm</button>
+    </div>
+</div>

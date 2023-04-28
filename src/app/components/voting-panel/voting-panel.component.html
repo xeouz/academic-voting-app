@@ -1,0 +1,72 @@
+<div class="h-full w-full">
+    <div class="flex flex-row h-full w-full">
+        <div class="bg-gradient-to-br from-white/20 to-white/50 rounded-lg my-10 ml-10 mr-2 w-full overflow-hidden flex flex-col">
+            <div class="w-full overflow-hidden h-24 shadow-black/10 shadow-lg font-['Ubuntu_Mono'] text-gray-800 flex flex-col justify-center items-start font-bold text-4xl">
+                <p class="grow my-3.5 text-[2.7rem] w-full text-center" [@fadeReappear]="titleAnimationState? 'show': 'hide'">{{screenTitleText}}</p>
+                <div class="h-1.5 w-full bg-white/70 rounded-md " 
+                [@smoothResize]="{value: progressBarAnimationState? 'grown':'current', params: {currentWidth: currentProgressBarCompletion, newWidth:newProgressBarCompletion}}" 
+                [ngStyle]="{'width': ''+currentProgressBarCompletion+'%'}">
+                </div>
+            </div>
+            <div class="h-full">
+                <app-voting-student-info-panel [hidden]="currentSelection!=1" (onContinue)="navigateNextPanel()"></app-voting-student-info-panel>
+                <app-voting-election-panel [students]="getStudentData('Head Boy')" [post]="'Head Boy'" [hidden]="currentSelection!=2" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('Head Girl')" [post]="'Head Girl'" [hidden]="currentSelection!=3" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('Cultural Captain')" [post]="'Cultural Captain'" [hidden]="currentSelection!=4" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('Cultural Vice-Captain')" [post]="'Cultural Vice-Captain'" [hidden]="currentSelection!=5" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('Sports Captain')" [post]="'Sports Captain'" [hidden]="currentSelection!=6" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('Sports Vice-Captain')" [post]="'Sports Vice-Captain'" [hidden]="currentSelection!=7" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('House Captain')" [post]="'House Captain'" [hidden]="currentSelection!=8" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel [students]="getStudentData('House Vice-Captain')" [post]="'House Vice-Captain'" [hidden]="currentSelection!=9" (onContinue)="navigateNextPanel()" isLast="true"></app-voting-election-panel>
+                <div [hidden]="currentSelection!=10">
+                    <div class="flex items-center flex-col">
+                        <div class="rounded-lg bg-white/40 mx-20 py-4 px-8 my-32">
+                            <p class="text-4xl font-extrabold text-center font-['Ubuntu_Mono']">
+                                Confirm your vote. You can navigate to previous pages by clicking on the buttons the sidebar to your right.
+                            </p>
+                        </div>
+                        <button (click)="onSubmitClicked()" class="font-['Ubuntu_Mono'] text-4xl transition-all shadow-xl hover:shadow-2xl hover:scale-110 h-32 w-72 rounded-lg p-2 font-semibold bg-white/50">
+                            Submit Vote
+                        </button>
+                    </div>
+                </div>
+                <div [hidden]="currentSelection!=11">
+                    <div class="flex items-center flex-col justify-center">
+                        <p class="m-10 text-6xl font-extrabold text-center font-['Ubuntu_Mono']">
+                            Thank your for voting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[26rem] overflow-hidden bg-gradient-to-br from-white/10 to-white/30 rounded-lg my-10 mx-10 flex flex-col justify-center items-center font-['Ubuntu_Mono'] font-extrabold">
+            <button (click)="selectNavbar(1)" class="navbutton" [ngStyle]="{'background-color': currentSelection==1? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Information
+            </button>
+            <button (click)="selectNavbar(2)" class="navbutton" [ngStyle]="{'background-color': currentSelection==2? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Head Boy
+            </button>
+            <button (click)="selectNavbar(3)" class="navbutton" [ngStyle]="{'background-color': currentSelection==3? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Head Girl
+            </button>
+            <button (click)="selectNavbar(4)" class="navbutton" [ngStyle]="{'background-color': currentSelection==4? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Cultural Captain
+            </button>
+            <button (click)="selectNavbar(5)" class="navbutton" [ngStyle]="{'background-color': currentSelection==5? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Cultural Vice-Captain
+            </button>
+            <button (click)="selectNavbar(6)" class="navbutton" [ngStyle]="{'background-color': currentSelection==6? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Sports Captain
+            </button>
+            <button (click)="selectNavbar(7)" class="navbutton" [ngStyle]="{'background-color': currentSelection==7? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                Sports Vice-Captain
+            </button>
+            <button (click)="selectNavbar(8)" class="navbutton" [ngStyle]="{'background-color': currentSelection==8? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                {{houseText}} House Captain
+            </button>
+            <button (click)="selectNavbar(9)" class="navbutton-end" [ngStyle]="{'background-color': currentSelection==9? 'rgba(255,255,255,0.15)' : 'transparent'}">
+                {{houseText}} House Vice-Captain
+            </button>
+        </div>
+    </div>
+</div>

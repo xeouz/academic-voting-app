@@ -1,0 +1,7 @@
+.navbutton {
+    @apply grow shadow-black/10 shadow-md w-full text-xl transition-all duration-200 ease-in-out hover:shadow-xl hover:text-2xl hover:bg-white/[0.15] hover:text-[#D8DEE9]
+}
+
+.navbutton-end {
+    @apply grow w-full shadow-none text-xl transition-all duration-200 ease-in-out hover:shadow-xl hover:text-2xl hover:bg-white/[0.15] hover:text-[#D8DEE9]
+}
