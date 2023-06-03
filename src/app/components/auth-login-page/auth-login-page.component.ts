@@ -41,10 +41,12 @@ export class AuthLoginPageComponent implements OnInit {
     if(result == "login")
     {
       this.router.navigate(['auth']);
+      return;
     }
     else if(result == "data")
     {
-      this.router.navigate(['auth/data']);
+      this.router.navigate(['data']);
+      return;
     }
     else
     {
