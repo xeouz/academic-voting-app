@@ -1,0 +1,20 @@
+.rotate-icon {
+    --tw-rotate: -90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.allow_button {
+    @apply transition-colors py-4 grow rounded-lg tracking-wide m-2 font-semibold sm:scale-90 xl:scale-100 sm:h-20 sm:min-w-[15rem] sm:text-xl xl:h-full xl:text-2xl xl:min-w-[25rem]
+}
+
+.status_text {
+    @apply bg-blue-600/10 py-4 grow-[10] px-5 rounded sm:scale-90 sm:h-20 sm:-mx-5 sm:text-lg xl:mx-0 xl:h-full xl:text-xl xl:scale-100
+}
+
+.reset_button {
+    @apply py-4 grow rounded-lg tracking-wide xl:m-2 sm:m-1 text-3xl bg-gray-500/30 shadow-lg transition-all xl:hover:scale-100 xl:scale-90 sm:hover:scale-90 sm:scale-[.80]
+}
+
+.download_button {
+    @apply font-semibold p-6 m-6 text-3xl shadow-lg hover:shadow-xl hover:scale-[1.15] scale-[1.1] duration-100 transition-all rounded-lg
+}

@@ -1,0 +1,33 @@
+<div>
+    <div [ngSwitch]="houseStr">
+        <div *ngSwitchCase="'Red House'">
+            <button (click)="navigateTo('red')" class="xl:h-24 xl:w-60 sm:h-16 w-40 border-x-2 border-y-2 rounded border-[#2E3440] border-8 transition ease-in-out text-gray-800 bg-red-100 hover:bg-nred hover:text-white duration-300">
+                <p class="font-['Poppins'] xl:text-3xl md:text-xl font-bold my-3 mx-4">
+                    {{houseStr}}
+                </p>
+            </button>
+        </div>
+        <div *ngSwitchCase="'Blue House'">
+            <button (click)="navigateTo('blue')" class="xl:h-24 xl:w-60 sm:h-16 w-40 border-x-2 border-y-2 rounded border-[#2E3440] border-8 transition ease-in-out text-gray-800 bg-blue-100 hover:bg-nblu hover:text-white duration-300">
+                <p class="font-['Poppins'] xl:text-3xl md:text-xl font-bold my-3 mx-4">
+                    {{houseStr}}
+                </p>
+            </button>
+        </div>
+        <div *ngSwitchCase="'Green House'">
+            <button (click)="navigateTo('green')" class="xl:h-24 xl:w-60 sm:h-16 w-40 border-x-2 border-y-2 rounded border-[#2E3440] border-8 transition ease-in-out text-gray-800 bg-green-100 hover:bg-ngrn hover:text-white duration-300">
+                <p class="font-['Poppins'] xl:text-3xl md:text-xl font-bold my-3 mx-4">
+                    {{houseStr}}
+                </p>
+            </button>
+        </div>
+        <div *ngSwitchCase="'Yellow House'">
+            <button (click)="navigateTo('yellow')" class="xl:h-24 xl:w-60 sm:h-16 w-40 border-x-2 border-y-2 rounded border-[#2E3440] border-8 transition ease-in-out text-gray-800 bg-yellow-100 hover:bg-nyel hover:text-white duration-300">
+                <p class="font-['Poppins'] xl:text-3xl md:text-xl font-bold my-3 mx-4">
+                    {{houseStr}}
+                </p>
+            </button>
+        </div>
+    </div>
+    
+</div>

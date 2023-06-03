@@ -1,0 +1,32 @@
+<div class="h-full w-full">
+    <div class="ml-20 font-['Poppins'] text-gray-950/80 text-5xl font-bold flex flex-col">
+        <div class="mt-20 mr-10 flex flex-row items-start bg-white/20 p-4 pl-10 rounded-md max-w-[120rem]">
+            <p class="font-['Ubuntu_Mono'] min-w-[11rem]">Grade</p>
+            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-7">
+                <button
+                *ngFor="let grade of availableGrades"
+                class="grade-button" 
+                (click)="selectGrade(grade)" 
+                [ngStyle]="{'background-color': getGradeButtonColor(grade)}">{{grade}}</button>
+            </div>
+        </div>
+        <div class="mt-5 mr-10 flex flex-row items-start bg-white/20 p-4 pl-10 rounded-md max-w-[120rem]">
+            <p class="font-['Ubuntu_Mono'] pt-2 min-w-[11rem]">Division</p>
+            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-7">
+                <button class="division-button" (click)="selectDivision('A')" [disabled]="isDivisionButtonDisabled('A')" [ngStyle]="{'background-color': getDivisionButtonColor('A')}">A</button>
+                <button class="division-button" (click)="selectDivision('B')" [disabled]="isDivisionButtonDisabled('B')" [ngStyle]="{'background-color': getDivisionButtonColor('B')}">B</button>
+                <button class="division-button" (click)="selectDivision('C')" [disabled]="isDivisionButtonDisabled('C')" [ngStyle]="{'background-color': getDivisionButtonColor('C')}">C</button>
+                <button class="division-button" (click)="selectDivision('D')" [disabled]="isDivisionButtonDisabled('D')" [ngStyle]="{'background-color': getDivisionButtonColor('D')}">D</button>
+                <button class="division-button" (click)="selectDivision('E')" [disabled]="isDivisionButtonDisabled('E')" [ngStyle]="{'background-color': getDivisionButtonColor('E')}">E</button>
+                <button class="division-button" (click)="selectDivision('F')" [disabled]="isDivisionButtonDisabled('F')" [ngStyle]="{'background-color': getDivisionButtonColor('F')}">F</button>
+                <button class="division-button" (click)="selectDivision('G')" [disabled]="isDivisionButtonDisabled('G')" [ngStyle]="{'background-color': getDivisionButtonColor('G')}">G</button>
+            </div>
+        </div>
+        <button (click)="onContinueClicked()" class="group self-end absolute bottom-10 m-12 mr-24 font-['Ubuntu_Mono'] min-h-[5rem] w-[15rem] transition-all hover:w-[17rem] hover:translate-x-5">
+            <div class="min-h-[5rem] min-w-[5rem] text-4xl font-bold flex flex-row justify-center items-center space-x-3 py-5 px-6 bg-gray-200/80 rounded-lg">
+                <p class="transition-transform group-hover:-translate-x-3">Continue</p>
+                <mat-icon class="font-semibold transition-transform group-hover:translate-x-3">arrow_forward_ios</mat-icon>
+            </div>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+.grade-button {
+    @apply xl:text-3xl sm:text-2xl max-w-[8rem] h-full min-h-[4rem] xl:min-w-[8rem] sm:min-w-[6.2rem] font-['Ubuntu_Mono'] bg-white/60 rounded-md shadow transition-all ease-in duration-75 hover:shadow-md xl:hover:scale-105 sm:hover:scale-90 sm:scale-75 sm:-ml-3 xl:scale-100 xl:-ml-0
+}

@@ -1,0 +1,13 @@
+<div class="mt-10 flex justify-center items-center">
+    <button [ngStyle]="{'background-image': ''+imagePath, 'opacity':isSelected=='true'?'1':'0.6'}"
+
+            (click)="onButtonClick()"
+
+            class="border-gray-700/80 bg-center opacity-100 border-[6px] start-0 bg-origin-content justify-center overflow-hidden flex group items-end xl:h-[13rem] xl:w-[24rem] bg-white/40 rounded-lg transition-all duration-200 
+            ease-out shadow-black/20 shadow-xl hover:shadow-xl hover:shadow-black/30 hover:-translate-y-1 hover:scale-[1.05] bg-cover"
+            >
+        <span class="text-[#ECEFF4] h-6 w-[110%] block text-md rounded-sm font-['Poppins'] text-center bg-black/80 group-hover:scale-110 group-hover:text-lg group-hover:h-8 font-semibold tracking-wider transition-all">
+            {{imageFooter}}
+        </span>
+    </button>
+</div>

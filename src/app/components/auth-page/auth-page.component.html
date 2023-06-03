@@ -1,0 +1,53 @@
+<div class="h-full min-h-screen w-screen flex flex-col pr-3">
+    <div class="flex flex-row items-center justify-start h-[8.5rem] shadow-md">
+        <div class="flex flex-col xl:text-[2.85rem] md:text-[2rem] sm:text-[2.25rem] sm:text-center xl:text-left grow align-middle text-left mx-10 tracking-tight font-extrabold font-['Ubuntu_Mono']">
+            <p class="text-[#05548E]">Vishwajyot Student Council Elections (2023-24)</p>
+        </div>
+        <img src="assets/vjhs-logo-disc.png" class="xl:block md:hidden sm:hidden mx-5 -my-10 aspect-auto mix-blend-multiply w-max">
+    </div>
+    <div class="flex flex-col bg-gray-600/10 h-full min-h-screen overflow-hidden">
+        <div class="font-['Ubuntu_Mono'] my-5 mx-8 overflow-hidden rounded-lg shadow-lg">
+            <div (click)="onAuthPanelClicked()" class="bg-white/50 cursor-pointer px-4 py-4 flex flex-row items-center" [ngStyle]="{'background-color': isAuthPanelExpanded?'rgba(75,85,99,0.15)':'rgba(255,255,255,0.5)'}">
+                <mat-icon
+                [ngClass]="{'rotate-icon': !isAuthPanelExpanded}"
+                [ngStyle]="{'margin-left': !isAuthPanelExpanded?'-0.5rem':'-0.25rem', 'margin-top':!isAuthPanelExpanded?'0.5rem':'-0.5rem'}" 
+                class="font-bold text-3xl align-middle text-gray-600 transition-all">expand_more</mat-icon>
+                <p class="mx-5 font-bold text-4xl cursor-pointer">Authorizer Panel</p>
+            </div>
+            <div class="h-full bg-white/30 px-3 py-5 flex flex-col flex-1">
+                <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
+                    <button
+                    (click)="onRedAuthButtonClicked()"
+                    [disabled]="!redHouseNeedsAuth"
+                    [ngStyle]="{'background-color':redHouseNeedsAuth?'rgba(220,38,38,.35)':'rgba(156,163,175,.3)', 'color':redHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
+                    class="allow_button ">Allow Red House</button>
+                    <p class="status_text">Status: {{redAuthText}}</p>
+                </div>
+                <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
+                    <button
+                    (click)="onBlueAuthButtonClicked()"
+                    [disabled]="!blueHouseNeedsAuth"
+                    [ngStyle]="{'background-color':blueHouseNeedsAuth?'rgba(46,122,209,.35)':'rgba(156,163,175,.3)', 'color':blueHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
+                    class="allow_button">Allow Blue House</button>
+                    <p class="status_text">Status: {{blueAuthText}}</p>
+                </div>
+                <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
+                    <button
+                    (click)="onGreenAuthButtonClicked()"
+                    [disabled]="!greenHouseNeedsAuth"
+                    [ngStyle]="{'background-color':greenHouseNeedsAuth?'rgba(49,204,103,.35)':'rgba(156,163,175,.3)', 'color':greenHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
+                    class="allow_button">Allow Green House</button>
+                    <p class="status_text">Status: {{greenAuthText}}</p>
+                </div>
+                <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
+                    <button
+                    (click)="onYellowAuthButtonClicked()"
+                    [disabled]="!yellowHouseNeedsAuth"
+                    [ngStyle]="{'background-color':yellowHouseNeedsAuth?'rgba(242, 194, 56,.35)':'rgba(156,163,175,.3)', 'color':yellowHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
+                    class="allow_button">Allow Yellow House</button>
+                    <p class="status_text">Status: {{yellowAuthText}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.grade-button {
+    @apply grow max-w-[8rem] h-full min-h-[4rem] min-w-[8rem] font-['Ubuntu_Mono'] bg-white/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg hover:scale-105
+}
+
+.division-button {
+    @apply grow max-w-[8rem] h-full min-h-[4rem] min-w-[8rem] font-['Ubuntu_Mono'] bg-purple-200/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg hover:scale-105
+}
