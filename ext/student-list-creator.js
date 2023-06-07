@@ -7,6 +7,10 @@ all_posts.forEach((val) => {
     data[val] = [];
 })
 
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
 function addStudent(post_name, student_name, student_image)
 {
     let student = {
@@ -29,13 +33,12 @@ function createSampleStudents()
         if(i%2 == 0)
         {
             name = 'Neerav Takker';
-            image = 'url(assets/test1.jpg)';
         }
         else
         {
             name = 'Manas Sarungbam';
-            image = 'url(assets/test2.jpg)';
         }
+        image = 'test'+randomInteger(1, 5)+'.jpg';
 
         addStudent(post, name+"1", image);
         addStudent(post, name+"2", image);

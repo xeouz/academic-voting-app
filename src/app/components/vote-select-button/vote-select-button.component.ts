@@ -15,4 +15,6 @@ export class VoteSelectButtonComponent {
   {
     this.onClick.emit();
   }
+
+  
 }

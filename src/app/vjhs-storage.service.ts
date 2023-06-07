@@ -33,4 +33,12 @@ export class VjhsStorageService {
       on_retrieved();
     });
   }
+
+  async getImageURL(imagePath: string): Promise<string>
+  {
+    const reference = ref(this.storage, "images/"+imagePath);
+    const url = await getDownloadURL(reference);
+
+    return url;
+  }
 }

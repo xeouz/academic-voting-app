@@ -1,9 +1,13 @@
 <div class="h-full w-full flex flex-col items-center">
     <div class="mx-40 flex -space-y-7 flex-wrap flex-row justify-center items-center">
-        <app-vote-select-button imagePath="{{getImagePath(0)}}" imageFooter="{{getImageFooter(0)}}" (onClick)="selectVote(1)" class="flex-[50%] -mt-7 scale-[0.88]" isSelected="{{isButtonSelected(1)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(1)}}" imageFooter="{{getImageFooter(1)}}" (onClick)="selectVote(2)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(2)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(2)}}" imageFooter="{{getImageFooter(2)}}" (onClick)="selectVote(3)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(3)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(3)}}" imageFooter="{{getImageFooter(3)}}" (onClick)="selectVote(4)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(4)}}"></app-vote-select-button>
+        <app-vote-select-button 
+        *ngFor="let student of students; let i = index"
+        imagePath="{{images.get(student.name)}}"
+        imageFooter="{{student.name}}"
+        (onClick)="selectVote(i+1)"
+        [isSelected]="isButtonSelected(i+1)"
+        [ngClass]="i==0?'first-button':'other-button'"
+        ></app-vote-select-button>
     </div>
     <button (click)="selectVote(0)" 
     [ngStyle]="{'opacity': isButtonSelected(0)=='true'?'1':'.6'}" 
