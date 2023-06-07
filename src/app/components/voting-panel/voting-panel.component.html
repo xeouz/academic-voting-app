@@ -8,27 +8,27 @@
                 [ngStyle]="{'width': ''+currentProgressBarCompletion+'%'}">
                 </div>
             </div>
-            <div class="h-full">
-                <div [hidden]="currentSelection!=0">
-                    <div class="flex items-center flex-col justify-center">
-                        <p class="m-10 mt-28 text-5xl font-semibold text-center font-['Ubuntu_Mono']">
+            <div class="h-full flex flex-col">
+                <div class="grow" [hidden]="currentSelection!=0">
+                    <div class="flex items-center flex-col justify-center font-['Ubuntu_Mono']">
+                        <p class="m-10 mt-28 text-5xl font-semibold text-center">
                             Start Voting by clicking the button below!
                         </p>
-                        <button (click)="onStartClicked()" class="font-bold text-4xl bg-white/30 transition-transform hover:scale-105 shadow-lg p-7 rounded-lg text-center font-['Ubuntu_Mono']">
+                        <button (click)="onStartClicked()" class="font-bold text-4xl bg-white/30 transition-transform hover:scale-105 shadow-lg p-7 rounded-lg text-center">
                             Start Voting!
                         </button>
                     </div>
                 </div>
-                <app-voting-student-info-panel [house]="houseText" [hidden]="currentSelection!=1" (onContinue)="navigateNextPanel()"></app-voting-student-info-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Head Boy')" [post]="'Head Boy'" [hidden]="currentSelection!=2" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Head Girl')" [post]="'Head Girl'" [hidden]="currentSelection!=3" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Cultural Captain')" [post]="'Cultural Captain'" [hidden]="currentSelection!=4" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Cultural Vice-Captain')" [post]="'Cultural Vice-Captain'" [hidden]="currentSelection!=5" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Sports Captain')" [post]="'Sports Captain'" [hidden]="currentSelection!=6" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('Sports Vice-Captain')" [post]="'Sports Vice-Captain'" [hidden]="currentSelection!=7" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('House Captain')" [post]="'House Captain'" [hidden]="currentSelection!=8" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
-                <app-voting-election-panel [house]="houseText" [students]="getStudentData('House Vice-Captain')" [post]="'House Vice-Captain'" [hidden]="currentSelection!=9" (onContinue)="navigateNextPanel()" isLast="true"></app-voting-election-panel>
-                <div [hidden]="currentSelection!=10">
+                <app-voting-student-info-panel class="grow" [house]="houseText" [hidden]="currentSelection!=1" (onContinue)="navigateNextPanel()"></app-voting-student-info-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Head Boy')" [post]="'Head Boy'" [hidden]="currentSelection!=2" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Head Girl')" [post]="'Head Girl'" [hidden]="currentSelection!=3" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Cultural Captain')" [post]="'Cultural Captain'" [hidden]="currentSelection!=4" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Cultural Vice-Captain')" [post]="'Cultural Vice-Captain'" [hidden]="currentSelection!=5" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Sports Captain')" [post]="'Sports Captain'" [hidden]="currentSelection!=6" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('Sports Vice-Captain')" [post]="'Sports Vice-Captain'" [hidden]="currentSelection!=7" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('House Captain')" [post]="'House Captain'" [hidden]="currentSelection!=8" (onContinue)="navigateNextPanel()"></app-voting-election-panel>
+                <app-voting-election-panel class="grow" [house]="houseText" [students]="getStudentData('House Vice-Captain')" [post]="'House Vice-Captain'" [hidden]="currentSelection!=9" (onContinue)="navigateNextPanel()" isLast="true"></app-voting-election-panel>
+                <div class="grow" [hidden]="currentSelection!=10">
                     <div class="flex items-center flex-col">
                         <div class="rounded-lg bg-white/40 mx-20 py-4 px-8 my-32">
                             <p class="text-4xl font-extrabold text-center font-['Ubuntu_Mono']">
@@ -40,19 +40,26 @@
                         </button>
                     </div>
                 </div>
-                <div [hidden]="currentSelection!=11">
+                <div class="grow" [hidden]="currentSelection!=11">
                     <div class="flex items-center flex-col justify-center">
                         <p class="m-10 text-6xl font-extrabold text-center font-['Ubuntu_Mono']">
                             Thank your for voting.
                         </p>
                     </div>
                 </div>
-                <div [hidden]="currentSelection!=12">
+                <div class="grow" [hidden]="currentSelection!=12">
                     <div class="flex items-center flex-col justify-center">
                         <p class="m-10 text-6xl font-extrabold text-center font-['Ubuntu_Mono']">
                             Votings are already open in another tab.
                         </p>
                     </div>
+                </div>
+                <div class="mx-10 text-[1.35rem] mb-20 font-['Ubuntu_Mono'] font-bold flex flex-col items-center justify-center">
+                    <div class="flex flex-row">
+                        <mat-icon class="m-1">copyright</mat-icon>
+                        <p>Designed and Programmed by Yash Pimpalshende, Helped by Manas Sarungbam [X-C]</p>
+                    </div>
+                    <p>Created with Angular-16</p>
                 </div>
             </div>
         </div>
