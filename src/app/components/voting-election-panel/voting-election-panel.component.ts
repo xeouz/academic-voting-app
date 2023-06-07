@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DataSnapshot } from 'firebase/database';
 import { VjhsDatabaseService } from 'src/app/vjhs-database.service';
 import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
+import { VjhsStorageService } from 'src/app/vjhs-storage.service';
 
 @Component({
   selector: 'app-voting-election-panel',
@@ -12,21 +13,17 @@ import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
 export class VotingElectionPanelComponent implements OnInit {
   selectedPerson = -1;
   @Input() post = "";
-  @Input() students: any;
+  @Input() students: {name:string, image:string}[] = [];
   @Input() isLast = "false";
   @Input() house = "";
   @Output() onContinue: EventEmitter<any> = new EventEmitter();
+
+  images: Map<string, string> = new Map<string, string>();
 
   isButtonSelected(button_indx: number): string
   {
     if(this.selectedPerson == -1) return "true";
     return (this.selectedPerson == button_indx)?'true':'false';
-  }
-
-  getImagePath(button_indx: number): string
-  {
-    if(this.students == null || this.students == undefined) return ""; 
-    return this.students[button_indx]['image'];
   }
 
   getImageFooter(button_indx: number): string
@@ -64,8 +61,8 @@ export class VotingElectionPanelComponent implements OnInit {
     this.selectedPerson = -1;
   }
 
-  constructor(private db_service: VjhsDatabaseService, private dialog: MatDialog) {}
-
+  constructor(private db_service: VjhsDatabaseService, private stg_service: VjhsStorageService, private dialog: MatDialog) {}
+  
   ngOnInit(): void
   {
     this.db_service.addHouseListener(this.house, (snapshot: DataSnapshot) => {
