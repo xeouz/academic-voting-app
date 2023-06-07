@@ -21,8 +21,8 @@ export class VjhsLoginService {
   private loginCallbacks: CallableFunction[] = [];
   initLogin(password: string): string
   {
-    if(this.loginPassword=="" || this.dataPassword=="")  return "";
     if(this.loggedIn) return this.loginMode;
+    if(this.loginPassword=="" || this.dataPassword=="")  return "";
 
     if(this.loginPassword == password)
     {

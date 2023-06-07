@@ -20,7 +20,7 @@ const routes: Routes = [
     component: AuthPageComponent
   },
   {
-    path: 'data',
+    path: 'auth/data',
     component: AuthDataPageComponent
   },
   {
