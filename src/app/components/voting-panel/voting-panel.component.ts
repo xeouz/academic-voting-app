@@ -170,7 +170,7 @@ export class VotingPanelComponent implements OnInit {
         this.isUsable = false;
         this.currentSelection = 12;
       }
-      //this.db_service.setHouseOpen(this.houseText, true);
+      this.db_service.setHouseOpen(this.houseText, true);
     });
 
     this.stg_service.retrieveStudentList(() => {
