@@ -44,7 +44,7 @@ export class VotingPanelComponent implements OnInit {
   isButtonUsable = false;
   isUsable = true;
   currentSelection = -1;
-  maxSelection = 0;
+  maxSelection = 1;
   private selections = 
   ["", "Information", "Head Boy", "Head Girl", 
   "Cultural Captain", "Cultural Vice-Captain", "Sports Captain", 
@@ -119,14 +119,12 @@ export class VotingPanelComponent implements OnInit {
 
   onStartClicked()
   {
-    this.maxSelection = 1;
     this.docElem.requestFullscreen();
     this.selectNavbar(1);
   }
 
   resetPanels()
   {
-    this.maxSelection = 0;
     this.isUsable = true;
     this.selectNavbar(0);
   }
@@ -158,6 +156,7 @@ export class VotingPanelComponent implements OnInit {
   
   studentData: any;
   ngOnInit(): void {
+
     this.docElem = document.documentElement;
     this.docElem.addEventListener("fullscreenchange", (event) => this.onFullscreenChanged(event));
 
@@ -167,7 +166,7 @@ export class VotingPanelComponent implements OnInit {
         this.isUsable = false;
         this.currentSelection = 12;
       }
-      //this.db_service.setHouseOpen(this.houseText, true);
+      this.db_service.setHouseOpen(this.houseText, true);
     });
 
     this.stg_service.retrieveStudentList(() => {

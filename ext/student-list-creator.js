@@ -37,6 +37,7 @@ function createSampleStudents()
         {
             name = 'Manas Sarungbam';
         }
+        image = 'test'+randomInteger(1, 5)+'.jpg';
 
         for(let i=0; i<randomInteger(3,10); ++i)
         {

@@ -20,9 +20,6 @@ export class AuthDataPageComponent implements OnInit {
   blueHouseNeedsAuth = false;
   greenHouseNeedsAuth = false;
   yellowHouseNeedsAuth = false;
-  fullscreen = {
-    red: false, blue: false, green: false, yellow: false,
-  }
 
   authTexts = {
     auth_ongoing: "Voting session ongoing, already authorized.",
@@ -250,19 +247,23 @@ export class AuthDataPageComponent implements OnInit {
     });
     this.db_service.addHouseFullscreenListener('red', (snapshot: DataSnapshot) => {
       let fullscreen = snapshot.val();
-      this.fullscreen.red = fullscreen;
+      if (fullscreen == false)
+        this.redAuthText += " [NOT IN FULLSCREEN]"
     });
     this.db_service.addHouseFullscreenListener('blue', (snapshot: DataSnapshot) => {
       let fullscreen = snapshot.val();
-      this.fullscreen.blue = fullscreen;
+      if (fullscreen == false)
+        this.blueAuthText += " [NOT IN FULLSCREEN]"
     });
     this.db_service.addHouseFullscreenListener('green', (snapshot: DataSnapshot) => {
       let fullscreen = snapshot.val();
-      this.fullscreen.green = fullscreen;
+      if (fullscreen == false)
+        this.greenAuthText += " [NOT IN FULLSCREEN]"
     });
     this.db_service.addHouseFullscreenListener('yellow', (snapshot: DataSnapshot) => {
       let fullscreen = snapshot.val();
-      this.fullscreen.yellow = fullscreen;
+      if (fullscreen == false)
+        this.yellowAuthText += " [NOT IN FULLSCREEN]"
     });
   }
 }

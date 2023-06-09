@@ -22,10 +22,11 @@
     "@angular/platform-browser": "^16.0.3",
     "@angular/platform-browser-dynamic": "^16.0.3",
     "@angular/router": "^16.0.3",
-    "angularfire": "^2.3.0",
+    "angularfire": "^1.2.0",
     "color": "^4.2.3",
     "exceljs": "^4.3.0",
     "file-saver": "^2.0.5",
+    "findup-sync": "^5.0.0",
     "firebase": "^9.22.1",
     "node-gyp": "^9.3.1",
     "rxjs": "~7.8.1",
@@ -33,7 +34,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.3",
+    "@angular-devkit/build-angular": "^16.0.4",
     "@angular/cli": "~16.0.3",
     "@angular/compiler-cli": "^16.0.3",
     "@types/color": "^3.0.3",

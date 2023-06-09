@@ -8,13 +8,13 @@
                 [ngStyle]="{'width': ''+currentProgressBarCompletion+'%'}">
                 </div>
             </div>
-            <div class="h-full flex flex-col">
-                <div class="grow" [hidden]="currentSelection!=0">
-                    <div class="flex items-center flex-col justify-center font-['Ubuntu_Mono']">
-                        <p class="m-10 mt-28 text-5xl font-semibold text-center">
+            <div class="h-full">
+                <div [hidden]="currentSelection!=0">
+                    <div class="flex items-center flex-col justify-center">
+                        <p class="m-10 mt-28 text-5xl font-semibold text-center font-['Ubuntu_Mono']">
                             Start Voting by clicking the button below!
                         </p>
-                        <button (click)="onStartClicked()" class="font-bold text-4xl bg-white/30 transition-transform hover:scale-105 shadow-lg p-7 rounded-lg text-center">
+                        <button (click)="onStartClicked()" class="font-bold text-4xl bg-white/30 transition-transform hover:scale-105 shadow-lg p-7 rounded-lg text-center font-['Ubuntu_Mono']">
                             Start Voting!
                         </button>
                     </div>
@@ -40,14 +40,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="grow" [hidden]="currentSelection!=11">
+                <div [hidden]="currentSelection!=11">
                     <div class="flex items-center flex-col justify-center">
                         <p class="m-10 text-6xl font-extrabold text-center font-['Ubuntu_Mono']">
                             Thank your for voting.
                         </p>
                     </div>
                 </div>
-                <div class="grow" [hidden]="currentSelection!=12">
+                <div [hidden]="currentSelection!=12">
                     <div class="flex items-center flex-col justify-center">
                         <p class="m-10 text-6xl font-extrabold text-center font-['Ubuntu_Mono']">
                             Votings are already open in another tab.
