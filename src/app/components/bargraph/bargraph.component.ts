@@ -56,12 +56,14 @@ export class BargraphComponent implements OnInit, AfterViewInit {
       ['Candidate', 'Votes']
     ];
 
-    Object.keys(data).forEach((key) => {
+    Object.keys(data).forEach((key, index, array) => {
       if (key == "total")
         return;
       
       let keystr = key;
-      if (keystr.length>14)
+      if (array.length>6)
+        keystr = keystr.split(' ')[0];
+      else if (keystr.length>14 || array.length>4)
         keystr = keystr.split(' ').join('\n');
       
       chartData.push([keystr, data[key]]);

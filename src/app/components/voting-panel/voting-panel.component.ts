@@ -41,6 +41,7 @@ export class VotingPanelComponent implements OnInit {
   progressBarAnimationState = false;
   @Input('house') houseText = "";
 
+  isButtonUsable = false;
   isUsable = true;
   currentSelection = -1;
   maxSelection = 0;
@@ -81,6 +82,11 @@ export class VotingPanelComponent implements OnInit {
       });
       return;
     }
+    else if(index < this.maxSelection)
+    {
+      return;
+    }
+
     if(index == this.currentSelection)  return;
 
     let str = this.selections[index];
@@ -101,15 +107,6 @@ export class VotingPanelComponent implements OnInit {
   {
     this.maxSelection++;
     this.selectNavbar(this.currentSelection+1);
-  }
-
-  getStudentData(post_name: string): any
-  {
-    if (this.studentData == null)  return null;
-    if (post_name == "House Captain" || post_name == "House Vice-Captain")
-      post_name = this.houseText + " " + post_name;
-    
-    return this.studentData[post_name];
   }
 
   onSubmitClicked()

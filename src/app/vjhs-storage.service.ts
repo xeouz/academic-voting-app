@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ref, Storage, getDownloadURL } from '@angular/fire/storage';
+import { ref, Storage, getDownloadURL, uploadBytes } from '@angular/fire/storage';
 import { inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -32,5 +32,27 @@ export class VjhsStorageService {
       this.studentList = data;
       on_retrieved();
     });
+  }
+
+  async getImageURL(path: string)
+  {
+    const reference = ref(this.storage, 'images/'+path);
+    return await getDownloadURL(reference);
+  }
+
+  async updatePassword(type: string, password: string)
+  {
+    switch(type)
+    {
+      case "auth": this.studentList["Password"] = password; break;
+      case "data": this.studentList["DataPassword"] = password; break;
+      default: return;
+    }
+
+    let jsonString = JSON.stringify(this.studentList);
+    let blob = new Blob([jsonString], {type: 'application/json'});
+
+    let fileRef = ref(this.storage, "student-list.json");
+    await uploadBytes(fileRef, blob);
   }
 }

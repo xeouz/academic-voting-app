@@ -1,5 +1,5 @@
-<div class="mt-10 flex justify-center items-center">
-    <button [ngStyle]="{'background-image': ''+imagePath, 'opacity':isSelected=='true'?'1':'0.6'}"
+<div class="flex justify-center items-center">
+    <button [ngStyle]="{'background-image': 'url('+imagePath+')', 'opacity':isSelected=='true'?'1':'0.6'}"
 
             (click)="onButtonClick()"
 

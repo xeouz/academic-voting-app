@@ -1,254 +1,346 @@
 {
 	"Head Boy": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test5.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
-		},
-		{
-			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test3.jpg"
 		}
 	],
 	"Head Girl": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Manas Sarungbam5",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Manas Sarungbam6",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Manas Sarungbam7",
+			"image": "test5.jpg"
 		}
 	],
 	"Cultural Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test5.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test3.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Neerav Takker5",
+			"image": "test2.jpg"
 		}
 	],
 	"Cultural Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test1.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test1.jpg"
 		}
 	],
 	"Sports Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test2.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Neerav Takker5",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Neerav Takker6",
+			"image": "test5.jpg"
 		}
 	],
 	"Sports Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Manas Sarungbam5",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Manas Sarungbam6",
+			"image": "test2.jpg"
 		}
 	],
 	"Red House Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test3.jpg"
 		}
 	],
 	"Red House Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Manas Sarungbam5",
+			"image": "test1.jpg"
 		}
 	],
 	"Blue House Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test5.jpg"
 		}
 	],
 	"Blue House Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test1.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Manas Sarungbam5",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Manas Sarungbam6",
+			"image": "test2.jpg"
 		}
 	],
 	"Green House Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test4.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Neerav Takker5",
+			"image": "test2.jpg"
 		}
 	],
 	"Green House Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test3.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test5.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test2.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
-		},
-		{
-			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test4.jpg"
 		}
 	],
 	"Yellow House Captain": [
 		{
+			"name": "Neerav Takker0",
+			"image": "test5.jpg"
+		},
+		{
 			"name": "Neerav Takker1",
-			"image": "url(assets/test1.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Neerav Takker2",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Neerav Takker3",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Neerav Takker4",
-			"image": "url(assets/test1.jpg)"
+			"image": "test4.jpg"
 		}
 	],
 	"Yellow House Vice-Captain": [
 		{
+			"name": "Manas Sarungbam0",
+			"image": "test2.jpg"
+		},
+		{
 			"name": "Manas Sarungbam1",
-			"image": "url(assets/test2.jpg)"
+			"image": "test4.jpg"
 		},
 		{
 			"name": "Manas Sarungbam2",
-			"image": "url(assets/test2.jpg)"
+			"image": "test1.jpg"
 		},
 		{
 			"name": "Manas Sarungbam3",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
 		},
 		{
 			"name": "Manas Sarungbam4",
-			"image": "url(assets/test2.jpg)"
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Manas Sarungbam5",
+			"image": "test5.jpg"
 		}
 	],
 	"Password": "test123",

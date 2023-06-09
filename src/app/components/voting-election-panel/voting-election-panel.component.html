@@ -1,13 +1,18 @@
 <div class="h-full w-full flex flex-col items-center">
-    <div class="mx-40 flex -space-y-7 flex-wrap flex-row justify-center items-center">
-        <app-vote-select-button imagePath="{{getImagePath(0)}}" imageFooter="{{getImageFooter(0)}}" (onClick)="selectVote(1)" class="flex-[50%] -mt-7 scale-[0.88]" isSelected="{{isButtonSelected(1)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(1)}}" imageFooter="{{getImageFooter(1)}}" (onClick)="selectVote(2)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(2)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(2)}}" imageFooter="{{getImageFooter(2)}}" (onClick)="selectVote(3)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(3)}}"></app-vote-select-button>
-        <app-vote-select-button imagePath="{{getImagePath(3)}}" imageFooter="{{getImageFooter(3)}}" (onClick)="selectVote(4)" class="flex-[50%] scale-[0.88]" isSelected="{{isButtonSelected(4)}}"></app-vote-select-button>
+    <div class="flex flex-wrap flex-row justify-center items-center gap-y-3 pt-6 max-h-[37rem] max-w-[98rem]" [ngStyle]="{'padding-left':flexPadding, 'padding-right':flexPadding}">
+        <app-vote-select-button
+        *ngFor="let student of students; let i = index"
+        [ngStyle]="{'flex':flexPercent}"
+        [imagePath]="getImage(student.name)"
+        [imageFooter]="student.name"
+        [isSelected]="isButtonSelected(i+1)"
+        (onClick)="selectVote(i+1)"
+        [ngClass]="i==0?firstButtonClass:otherButtonClass"
+        ></app-vote-select-button>
     </div>
     <button (click)="selectVote(0)" 
     [ngStyle]="{'opacity': isButtonSelected(0)=='true'?'1':'.6'}" 
-    class="border-4 border-gray-900/50 bg-gray-400/50 font-['Ubuntu_Mono'] text-lg rounded-lg mt-5 h-[4.5rem] w-52 font-semibold shadow-md transition-all duration-150 ease-out hover:-translate-y-0.5 hover:scale-110">
+    class="border-4 border-gray-900/50 bg-gray-400/50 font-['Ubuntu_Mono'] text-lg rounded-lg mt-16 h-[4.5rem] w-52 font-semibold shadow-md transition-all duration-150 ease-out hover:-translate-y-0.5 hover:scale-110">
         None of the above [NOTA]
     </button>
 

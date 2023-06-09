@@ -6,6 +6,15 @@
         <img src="assets/vjhs-logo-disc.png" class="xl:block md:hidden sm:hidden mx-5 -my-10 aspect-auto mix-blend-multiply w-max">
     </div>
     <div class="flex flex-col bg-gray-600/10 h-full min-h-screen overflow-hidden">
+        <div class="mx-10 text-[1.35rem] my-5 font-['Ubuntu_Mono'] flex flex-col items-center justify-center">
+            <div class="flex flex-row">
+                <mat-icon class="m-1">copyright</mat-icon>
+                <p class="">Designed and Programmed by&nbsp;</p> 
+                <p class="font-bold">Yash Pimpalshende</p>
+                <p>, Helped by Manas Sarungbam [X-C]</p>
+            </div>
+            <p>Created with Angular-16</p>
+        </div>
         <div class="font-['Ubuntu_Mono'] my-5 mx-8 overflow-hidden rounded-lg shadow-lg">
             <div (click)="onAuthPanelClicked()" class="bg-white/50 cursor-pointer px-4 py-4 flex flex-row items-center" [ngStyle]="{'background-color': isAuthPanelExpanded?'rgba(75,85,99,0.15)':'rgba(255,255,255,0.5)'}">
                 <mat-icon
@@ -21,7 +30,7 @@
                     [disabled]="!redHouseNeedsAuth"
                     [ngStyle]="{'background-color':redHouseNeedsAuth?'rgba(220,38,38,.35)':'rgba(156,163,175,.3)', 'color':redHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button ">Allow Red House</button>
-                    <p class="status_text">Status: {{redAuthText+(fullscreen.red==false?"[NOT IN FULLSCREEN]":"")}}</p>
+                    <p class="status_text">Status: {{redAuthText+(fullscreen.red==false?"     [NOT IN FULLSCREEN]":"")}}</p>
                 </div>
                 <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
                     <button
@@ -29,7 +38,7 @@
                     [disabled]="!blueHouseNeedsAuth"
                     [ngStyle]="{'background-color':blueHouseNeedsAuth?'rgba(46,122,209,.35)':'rgba(156,163,175,.3)', 'color':blueHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Blue House</button>
-                    <p class="status_text">Status: {{blueAuthText+(fullscreen.blue==false?"[NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{blueAuthText+(fullscreen.blue==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
                 </div>
                 <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
                     <button
@@ -37,7 +46,7 @@
                     [disabled]="!greenHouseNeedsAuth"
                     [ngStyle]="{'background-color':greenHouseNeedsAuth?'rgba(49,204,103,.35)':'rgba(156,163,175,.3)', 'color':greenHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Green House</button>
-                    <p class="status_text">Status: {{greenAuthText+(fullscreen.green==false?"[NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{greenAuthText+(fullscreen.green==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
                 </div>
                 <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
                     <button
@@ -45,7 +54,7 @@
                     [disabled]="!yellowHouseNeedsAuth"
                     [ngStyle]="{'background-color':yellowHouseNeedsAuth?'rgba(242, 194, 56,.35)':'rgba(156,163,175,.3)', 'color':yellowHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Yellow House</button>
-                    <p class="status_text">Status: {{yellowAuthText+(fullscreen.yellow==false?"[NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{yellowAuthText+(fullscreen.yellow==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
                 </div>
             </div>
         </div>

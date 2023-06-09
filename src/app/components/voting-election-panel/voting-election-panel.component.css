@@ -1,0 +1,15 @@
+.first-button {
+    @apply scale-[0.88]
+}
+
+.other-button {
+    @apply scale-[0.88]
+}
+
+.first-button-sm {
+    @apply scale-[0.75]
+}
+
+.other-button-sm {
+    @apply scale-[0.75]
+}

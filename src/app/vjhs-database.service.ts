@@ -137,7 +137,6 @@ export class VjhsDatabaseService {
   }
   addVote(post: string, name: string)
   {
-    console.log("Vote Post: "+post + " " + name);
     this.votePosts[post] = name;
   }
   submitVote(house: string) {
@@ -390,10 +389,10 @@ export class VjhsDatabaseService {
       postSheet.getColumn('K').width = 5.3;
 
       postSheet.getRow(3).height = 21;
-      postSheet.getRow(13).height = 21;
-      postSheet.getRow(23).height = 21;
+      postSheet.getRow(18).height = 21;
       postSheet.getRow(33).height = 21;
-      postSheet.getRow(43).height = 21;
+      postSheet.getRow(48).height = 21;
+      postSheet.getRow(63).height = 21;
       
       let n = 0;
       let colNum = 1;
@@ -421,7 +420,7 @@ export class VjhsDatabaseService {
         });
         candidates.sort((a,b) => b.votes - a.votes);
 
-        for(let i=0; i<6; ++i)
+        for(let i=0; i<11; ++i)
         {
           row = postSheet.getRow(rowNumber+i+2);
           if(i>=candidates.length)
@@ -435,14 +434,14 @@ export class VjhsDatabaseService {
           row.getCell(colNum+1).value = candidates[i].votes;
           row.getCell(colNum+2).value = i+1;
         }
-        row = postSheet.getRow(rowNumber+8);
+        row = postSheet.getRow(rowNumber+13);
         row.getCell(colNum).value = "Elected Candidate: "+candidates[0].name;
         row.getCell(colNum).font = {
           bold: true,
         }
         
         let colHex = 'FF'+color.hex().slice(1).toUpperCase();
-        for(let i=0; i<=8; ++i)
+        for(let i=0; i<=13; ++i)
         {
           row = postSheet.getRow(rowNumber+i);
 
@@ -455,7 +454,7 @@ export class VjhsDatabaseService {
               row.getCell(colNum+x).fill = {type: 'pattern',pattern:'solid',fgColor:{argb: colHex}};
             continue;
           }
-          else if(i==8)
+          else if(i==13)
           {
             row.getCell(colNum).border = {bottom: {style:'thin'},left: {style:'thin'}};
             row.getCell(colNum+1).border = {bottom: {style:'thin'},top: {style:'thin'}};
@@ -485,7 +484,7 @@ export class VjhsDatabaseService {
         if (n==2)
         {
           colNum = 1;
-          rowNumber += 10;
+          rowNumber += 15;
           n = 0;
         }
         else

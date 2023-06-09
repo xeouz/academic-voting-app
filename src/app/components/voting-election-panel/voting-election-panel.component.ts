@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DataSnapshot } from 'firebase/database';
 import { VjhsDatabaseService } from 'src/app/vjhs-database.service';
 import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
+import { VjhsStorageService } from 'src/app/vjhs-storage.service';
 
 @Component({
   selector: 'app-voting-election-panel',
@@ -12,10 +13,16 @@ import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
 export class VotingElectionPanelComponent implements OnInit {
   selectedPerson = -1;
   @Input() post = "";
-  @Input() students: any;
   @Input() isLast = "false";
   @Input() house = "";
   @Output() onContinue: EventEmitter<any> = new EventEmitter();
+
+  firstButtonClass = "first-button";
+  otherButtonClass = "other-button";
+  flexPercent = "50%";
+  flexPadding = "8rem";
+  students: {name: string, image: string}[] = [];
+  images = new Map<string, string>();
 
   isButtonSelected(button_indx: number): string
   {
@@ -23,10 +30,12 @@ export class VotingElectionPanelComponent implements OnInit {
     return (this.selectedPerson == button_indx)?'true':'false';
   }
 
-  getImagePath(button_indx: number): string
+  getImage(name: string): string
   {
-    if(this.students == null || this.students == undefined) return ""; 
-    return this.students[button_indx]['image'];
+    let img = this.images.get(name);
+    if(img == undefined)
+      return "";
+    return img;
   }
 
   getImageFooter(button_indx: number): string
@@ -64,7 +73,7 @@ export class VotingElectionPanelComponent implements OnInit {
     this.selectedPerson = -1;
   }
 
-  constructor(private db_service: VjhsDatabaseService, private dialog: MatDialog) {}
+  constructor(private db_service: VjhsDatabaseService, private stg_service: VjhsStorageService, private dialog: MatDialog) {}
 
   ngOnInit(): void
   {
@@ -72,6 +81,46 @@ export class VotingElectionPanelComponent implements OnInit {
       const allow = snapshot.val();
       if(allow == true)
         this.reset();
+    });
+
+    this.stg_service.retrieveStudentList(() => {
+      let postName = this.post;
+      if(postName.startsWith("House"))
+        postName = this.house + " " + postName;
+      
+      this.students = this.stg_service.studentList[postName];
+      if(this.students.length < 5)
+      {
+        this.flexPercent = "50%";
+        this.flexPadding = "20rem";
+        this.firstButtonClass = "first-button";
+        this.otherButtonClass = "other-button";
+      }
+      else if(this.students.length < 9)
+      {
+        this.flexPercent = "21%";
+        this.flexPadding = "13rem";
+        this.firstButtonClass = "first-button-sm";
+        this.otherButtonClass = "other-button-sm";
+      }
+      else if(this.students.length < 15)
+      {
+        this.flexPercent = "26%";
+        this.firstButtonClass = "first-button-sm";
+        this.otherButtonClass = "other-button-sm";
+        this.flexPadding = "8rem";
+      }
+
+      this.students.forEach((value) => {
+        if(value == undefined) return;
+        
+        this.stg_service.getImageURL(value.image).then((url) => {
+          this.images.set(value.name, url);
+          
+          var img = new Image();
+          img.src = url;
+        });
+      }); 
     });
   }
 }

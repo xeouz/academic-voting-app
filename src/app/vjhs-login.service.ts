@@ -14,10 +14,10 @@ export class VjhsLoginService {
     });
   }
 
-  private loginMode: string = "";
-  private loggedIn: boolean = false;
-  private loginPassword: string = "";
-  private dataPassword: string = "";
+  private loginMode: string = "data";
+  private loggedIn: boolean = true;
+  loginPassword: string = "";
+  dataPassword: string = "";
   private loginCallbacks: CallableFunction[] = [];
   initLogin(password: string): string
   {

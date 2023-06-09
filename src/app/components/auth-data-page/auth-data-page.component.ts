@@ -14,7 +14,8 @@ export class AuthDataPageComponent implements OnInit {
   isAuthPanelExpanded = false;
   isVotingPanelExpanded = false;
   isDataPanelExpanded = false;
-  isDownloadPanelExpanded = true;
+  isDownloadPanelExpanded = false;
+  isResetPanelExpanded = false;
   redHouseNeedsAuth = false;
   blueHouseNeedsAuth = false;
   greenHouseNeedsAuth = false;
@@ -51,6 +52,10 @@ export class AuthDataPageComponent implements OnInit {
   onDownloadPanelClicked()
   {
     this.isDownloadPanelExpanded = !this.isDownloadPanelExpanded;
+  }
+  onResetPanelClicked()
+  {
+    this.isResetPanelExpanded = !this.isResetPanelExpanded;
   }
   onResetDataButtonClicked()
   {
@@ -117,6 +122,50 @@ export class AuthDataPageComponent implements OnInit {
   onDownloadXLSXButtonClicked()
   {
     this.db_service.createXLSXDownload();
+  }
+  onResetAuthPasswordButtonClicked()
+  {
+    let password = prompt("Enter the data password to proceed.");
+    if (password == null)
+      return;
+    
+    if(!this.login_service.checkDataPassword(password))
+    {
+      alert("Invalid Password! Failed to reset authorizer password");
+      return;
+    }
+
+    let new_password = prompt("Enter new password for authorizer.");
+    if (new_password == null)
+      return;
+    
+    if(password == new_password)
+      return;
+    
+    this.login_service.loginPassword = new_password;
+    this.storage_service.updatePassword('auth', new_password);
+  }
+  onResetDataPasswordButtonClicked()
+  {
+    let password = prompt("Enter the data password to proceed.");
+    if (password == null)
+      return;
+    
+    if(!this.login_service.checkDataPassword(password))
+    {
+      alert("Invalid Password! Failed to reset data password");
+      return;
+    }
+
+    let new_password = prompt("Enter new password for data.");
+    if (new_password == null)
+      return;
+    
+    if(password == new_password)
+      return;
+    
+    this.login_service.dataPassword = new_password;
+    this.storage_service.updatePassword('data', new_password);
   }
 
   onRedAuthButtonClicked()
