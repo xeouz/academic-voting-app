@@ -110,7 +110,7 @@ export class AuthPageComponent implements OnInit {
 
   ngOnInit(): void {
     if(!this.login_service.isLoggedIn()) {
-      this.router.navigate(['/auth/login']);
+      this.router.navigate(['/login']);
       return;
     }
 

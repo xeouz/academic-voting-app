@@ -20,11 +20,11 @@ const routes: Routes = [
     component: AuthPageComponent
   },
   {
-    path: 'auth/data',
+    path: 'data',
     component: AuthDataPageComponent
   },
   {
-    path: 'auth/login',
+    path: 'login',
     component: AuthLoginPageComponent
   }
 ];
