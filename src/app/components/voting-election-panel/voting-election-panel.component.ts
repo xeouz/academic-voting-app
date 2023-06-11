@@ -112,30 +112,44 @@ export class VotingElectionPanelComponent implements OnInit {
         postName = this.house + " " + postName;
       
       this.students = this.stg_service.studentList[postName];
+      let width = window.outerWidth;
       if(this.students.length < 5)
       {
-        this.flexPadding = "20rem";
+        if(width>800)
+          this.flexPadding = "20rem";
+        else
+          this.flexPadding = "7rem";
         this.firstButtonClass = "first-button";
         this.otherButtonClass = "other-button";
       }
       else if(this.students.length < 6)
       {
-        this.flexPadding = "8rem";
+        if(width>800)
+          this.flexPadding = "8rem";
+        else
+          this.flexPadding = "2.5rem";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
       }
       else if(this.students.length < 9)
       {
-        this.flexPadding = "1rem";
+        if(width>800)
+          this.flexPadding = "1rem";
+        else
+          this.flexPadding = "20rem";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
       }
       else if(this.students.length < 15)
       {
+        if(width>800)
+          this.flexPadding = "8rem";
+        else
+          this.flexPadding = "2.5rem";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
-        this.flexPadding = "8rem";
       }
+      console.log(this.flexPadding, this.post);
 
       this.students.forEach((value) => {
         if(value == undefined) return;

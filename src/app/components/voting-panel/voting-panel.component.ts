@@ -121,7 +121,7 @@ export class VotingPanelComponent implements OnInit {
   {
     this.maxSelection = 1;
     this.selectNavbar(1);
-    this.docElem.requestFullscreen();
+    // this.docElem.requestFullscreen();
   }
 
   resetPanels()
