@@ -119,9 +119,9 @@ export class VotingPanelComponent implements OnInit {
 
   onStartClicked()
   {
-    this.docElem.requestFullscreen();
     this.maxSelection = 1;
     this.selectNavbar(1);
+    this.docElem.requestFullscreen();
   }
 
   resetPanels()
@@ -186,5 +186,6 @@ export class VotingPanelComponent implements OnInit {
     this.currentSelection = 0;
     this.newProgressBarCompletion = 0;
     this.isUsable = false;
+    this.resetPanels();
   }
 }
