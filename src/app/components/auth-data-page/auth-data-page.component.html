@@ -68,7 +68,7 @@
             </div>
             <div class="flex flex-col bg-white/30 px-3 py-5 items-center justify-center">
                 <p class="text-4xl font-bold underline underline-offset-4 mx-5" [hidden]="!isVotingPanelExpanded">Votings For</p>
-                <div class="flex flex-row flex-wrap ml-2" [hidden]="!isVotingPanelExpanded">
+                <div class="flex flex-row flex-wrap ml-2 justify-center items-center" [hidden]="!isVotingPanelExpanded">
                     <app-bargraph class="sm:-mt-0 xl:-mt-0" title="Head Boy" dataPath="Head Boy" [hidden]="!isVotingPanelExpanded"></app-bargraph>
                     <app-bargraph class="sm:-mt-8 xl:-mt-0" title="Head Girl" dataPath="Head Girl" [hidden]="!isVotingPanelExpanded"></app-bargraph>
                     <app-bargraph class="sm:-mt-8 xl:-mt-0" title="Sports Captain" dataPath="Sports Captain" [hidden]="!isVotingPanelExpanded"></app-bargraph>
@@ -96,32 +96,6 @@
             </div>
             <div class="flex flex-col bg-white/30 px-5 py-5 items-center justify-center">
                 <app-class-data [hidden]="!isDataPanelExpanded" class="grow h-full w-full"></app-class-data>
-            </div>
-            <div class="flex flex-col justify-center items-center w-full h-full bg-white/30 xl:pb-6 sm:pb-4">
-                <button
-                (click)="onResetDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-12 sm:mt-8 min-w-[22rem]">Reset All Data</button>
-                <button
-                (click)="onResetAuthDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-6 sm:mt-4 min-w-[35rem]">Reset All Authorization Data</button>
-                <button
-                (click)="onResetRedAuthDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Red House Authorization Data</button>
-                <button
-                (click)="onResetBlueAuthDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Blue House Authorization Data</button>
-                <button
-                (click)="onResetGreenAuthDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Green House Authorization Data</button>
-                <button
-                (click)="onResetYellowAuthDataButtonClicked()"
-                [hidden]="!isDataPanelExpanded"
-                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Yellow House Authorization Data</button>
             </div>
         </div>
         <div class="font-['Ubuntu_Mono'] my-5 mx-8 overflow-hidden rounded-lg shadow-lg">
@@ -160,6 +134,32 @@
                 class="download_button bg-blue-400/40"
                 (click)="onResetDataPasswordButtonClicked()"
                 [hidden]="!isResetPanelExpanded">Reset Data Password</button>
+            </div>
+            <div class="flex flex-col justify-center items-center w-full h-full bg-white/30 xl:pb-6 sm:pb-4">
+                <button
+                (click)="onResetDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-12 sm:mt-8 min-w-[22rem]">Reset All Data</button>
+                <button
+                (click)="onResetAuthDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset All Authorization Data</button>
+                <button
+                (click)="onResetRedAuthDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Red House Authorization Data</button>
+                <button
+                (click)="onResetBlueAuthDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Blue House Authorization Data</button>
+                <button
+                (click)="onResetGreenAuthDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Green House Authorization Data</button>
+                <button
+                (click)="onResetYellowAuthDataButtonClicked()"
+                [hidden]="!isResetPanelExpanded"
+                class="reset_button xl:mt-6 sm:mt-4 min-w-[40rem]">Reset Yellow House Authorization Data</button>
             </div>
         </div>
     </div>

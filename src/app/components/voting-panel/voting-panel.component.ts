@@ -120,13 +120,16 @@ export class VotingPanelComponent implements OnInit {
   onStartClicked()
   {
     this.docElem.requestFullscreen();
+    this.maxSelection = 1;
     this.selectNavbar(1);
   }
 
   resetPanels()
   {
     this.isUsable = true;
+    this.maxSelection = 0;
     this.selectNavbar(0);
+    this.currentProgressBarCompletion = 0;
   }
 
   onFullscreenChanged(event: Event)
@@ -166,7 +169,7 @@ export class VotingPanelComponent implements OnInit {
         this.isUsable = false;
         this.currentSelection = 12;
       }
-      this.db_service.setHouseOpen(this.houseText, true);
+      // this.db_service.setHouseOpen(this.houseText, true);
     });
 
     this.stg_service.retrieveStudentList(() => {
@@ -180,7 +183,7 @@ export class VotingPanelComponent implements OnInit {
         this.resetPanels();
     });
 
-    this.currentSelection = 11;
+    this.currentSelection = 0;
     this.newProgressBarCompletion = 0;
     this.isUsable = false;
   }

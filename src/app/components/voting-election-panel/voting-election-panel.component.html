@@ -1,8 +1,8 @@
 <div class="h-full w-full flex flex-col items-center">
-    <div class="flex flex-wrap flex-row justify-center items-center gap-y-3 pt-6 max-h-[37rem] max-w-[98rem]" [ngStyle]="{'padding-left':flexPadding, 'padding-right':flexPadding}">
+    <div class="flex flex-wrap flex-row items-center justify-center gap-y-1.5 pt-6 max-h-[30rem] max-w-[98rem]" [ngStyle]="{'padding-left':flexPadding, 'padding-right':flexPadding}">
         <app-vote-select-button
         *ngFor="let student of students; let i = index"
-        [ngStyle]="{'flex':flexPercent}"
+        [ngStyle]="{'flex':getFlexPercent()}"
         [imagePath]="getImage(student.name)"
         [imageFooter]="student.name"
         [isSelected]="isButtonSelected(i+1)"
@@ -15,6 +15,15 @@
     class="border-4 border-gray-900/50 bg-gray-400/50 font-['Ubuntu_Mono'] text-lg rounded-lg mt-16 h-[4.5rem] w-52 font-semibold shadow-md transition-all duration-150 ease-out hover:-translate-y-0.5 hover:scale-110">
         None of the above [NOTA]
     </button>
+    <div class="grow mx-10 text-[1.35rem] font-['Ubuntu_Mono'] flex flex-col items-center justify-center">
+        <div class="flex flex-row">
+            <mat-icon class="m-1">copyright</mat-icon>
+            <p class="">Designed and Programmed by&nbsp;</p> 
+            <p class="font-bold">Yash Pimpalshende</p>
+            <p>, Helped by Manas Sarungbam [X-C]</p>
+        </div>
+        <p>Created with Angular-16</p>
+    </div>
 
     <button (click)="onContinueClicked()" class="group self-end absolute bottom-10 m-12 mr-24 font-['Ubuntu_Mono'] min-h-[5rem] w-[15rem] transition-all hover:w-[17rem] hover:translate-x-5">
         <div class="min-h-[5rem] min-w-[5rem] text-4xl font-bold flex flex-row justify-center items-center space-x-3 py-5 px-6 bg-gray-200/80 rounded-lg">

@@ -1,7 +1,7 @@
 <div class="h-full w-full" id="VotingPanel">
     <div class="flex flex-row h-full w-full">
         <div class="bg-gradient-to-br from-white/20 to-white/50 rounded-lg my-10 ml-10 mr-2 w-full overflow-hidden flex flex-col">
-            <div class="w-full overflow-hidden h-24 shadow-black/10 shadow-lg font-['Ubuntu_Mono'] text-gray-800 flex flex-col justify-center items-start font-bold text-4xl">
+            <div class="w-full min-h-max overflow-hidden h-24 shadow-black/10 shadow-lg font-['Ubuntu_Mono'] text-gray-800 flex flex-col justify-center items-start font-bold text-4xl">
                 <p class="grow my-3.5 text-[2.7rem] w-full text-center" [@fadeReappear]="titleAnimationState? 'show': 'hide'">{{screenTitleText}}</p>
                 <div class="h-1.5 w-full bg-white/70 rounded-md " 
                 [@smoothResize]="{value: progressBarAnimationState? 'grown':'current', params: {currentWidth: currentProgressBarCompletion, newWidth:newProgressBarCompletion}}" 
@@ -54,7 +54,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="mx-10 text-[1.35rem] mb-20 font-['Ubuntu_Mono'] flex flex-col items-center justify-center">
+                <div class="grow mx-10 text-[1.35rem] mb-10 mt-20 font-['Ubuntu_Mono'] flex flex-col items-center justify-center">
                     <div class="flex flex-row">
                         <mat-icon class="m-1">copyright</mat-icon>
                         <p class="">Designed and Programmed by&nbsp;</p> 

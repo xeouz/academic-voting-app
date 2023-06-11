@@ -19,7 +19,6 @@ export class VotingElectionPanelComponent implements OnInit {
 
   firstButtonClass = "first-button";
   otherButtonClass = "other-button";
-  flexPercent = "50%";
   flexPadding = "8rem";
   students: {name: string, image: string}[] = [];
   images = new Map<string, string>();
@@ -73,6 +72,30 @@ export class VotingElectionPanelComponent implements OnInit {
     this.selectedPerson = -1;
   }
 
+  getFlexPercent(): string
+  {
+    if(this.students.length < 5)
+    {
+      // 2 per row
+      return "50%";
+    }
+    else if(this.students.length < 6)
+    {
+      return "20%";
+    }
+    else if(this.students.length < 9)
+    {
+      // 4 per row
+      return "21%"
+    }
+    else if(this.students.length < 15)
+    {
+      return "20%";
+    }
+
+    return "0%";
+  }
+
   constructor(private db_service: VjhsDatabaseService, private stg_service: VjhsStorageService, private dialog: MatDialog) {}
 
   ngOnInit(): void
@@ -91,21 +114,24 @@ export class VotingElectionPanelComponent implements OnInit {
       this.students = this.stg_service.studentList[postName];
       if(this.students.length < 5)
       {
-        this.flexPercent = "50%";
         this.flexPadding = "20rem";
         this.firstButtonClass = "first-button";
         this.otherButtonClass = "other-button";
       }
+      else if(this.students.length < 6)
+      {
+        this.flexPadding = "8rem";
+        this.firstButtonClass = "first-button-sm";
+        this.otherButtonClass = "other-button-sm";
+      }
       else if(this.students.length < 9)
       {
-        this.flexPercent = "21%";
-        this.flexPadding = "13rem";
+        this.flexPadding = "1rem";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
       }
       else if(this.students.length < 15)
       {
-        this.flexPercent = "26%";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
         this.flexPadding = "8rem";
@@ -120,7 +146,7 @@ export class VotingElectionPanelComponent implements OnInit {
           var img = new Image();
           img.src = url;
         });
-      }); 
+      });
     });
   }
 }

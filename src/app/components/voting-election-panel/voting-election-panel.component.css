@@ -1,15 +1,15 @@
 .first-button {
-    @apply scale-[0.88]
+    @apply scale-[0.85] max-w-max
 }
 
 .other-button {
-    @apply scale-[0.88]
+    @apply scale-[0.85] max-w-max
 }
 
 .first-button-sm {
-    @apply scale-[0.75]
+    @apply scale-[0.8] max-w-max
 }
 
 .other-button-sm {
-    @apply scale-[0.75]
+    @apply scale-[0.8] max-w-max
 }
