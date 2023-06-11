@@ -14,8 +14,8 @@ export class VjhsLoginService {
     });
   }
 
-  private loginMode: string = "data";
-  private loggedIn: boolean = true;
+  private loginMode: string = "";
+  private loggedIn: boolean = false;
   loginPassword: string = "";
   dataPassword: string = "";
   private loginCallbacks: CallableFunction[] = [];
