@@ -38,7 +38,7 @@
                     [disabled]="!blueHouseNeedsAuth"
                     [ngStyle]="{'background-color':blueHouseNeedsAuth?'rgba(46,122,209,.35)':'rgba(156,163,175,.3)', 'color':blueHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Blue House</button>
-                    <p class="status_text">Status: {{blueAuthText+(fullscreen.blue==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{blueAuthText+(fullscreen.blue==false?"     [NOT IN FULLSCREEN]":"")}}</p>
                 </div>
                 <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
                     <button
@@ -46,7 +46,7 @@
                     [disabled]="!greenHouseNeedsAuth"
                     [ngStyle]="{'background-color':greenHouseNeedsAuth?'rgba(49,204,103,.35)':'rgba(156,163,175,.3)', 'color':greenHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Green House</button>
-                    <p class="status_text">Status: {{greenAuthText+(fullscreen.green==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{greenAuthText+(fullscreen.green==false?"     [NOT IN FULLSCREEN]":"")}}</p>
                 </div>
                 <div class="text-2xl flex flex-row items-center" *ngIf="isAuthPanelExpanded">
                     <button
@@ -54,7 +54,7 @@
                     [disabled]="!yellowHouseNeedsAuth"
                     [ngStyle]="{'background-color':yellowHouseNeedsAuth?'rgba(242, 194, 56,.35)':'rgba(156,163,175,.3)', 'color':yellowHouseNeedsAuth?'inherit':'rgba(107,114,128,1)'}"
                     class="allow_button">Allow Yellow House</button>
-                    <p class="status_text">Status: {{yellowAuthText+(fullscreen.yellow==false?"     [NOT IN FULLSCREEN]":"")}}}</p>
+                    <p class="status_text">Status: {{yellowAuthText+(fullscreen.yellow==false?"     [NOT IN FULLSCREEN]":"")}}</p>
                 </div>
             </div>
         </div>

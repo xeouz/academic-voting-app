@@ -53,9 +53,11 @@ export class BargraphComponent implements OnInit, AfterViewInit {
       return;
     
     let chartData = [
-      ['Candidate', 'Votes']
+      ['Candidate', 'Votes', {role: 'style'}]
     ];
 
+    let highest = 0;
+    let highestData = 0;
     Object.keys(data).forEach((key, index, array) => {
       if (key == "total")
         return;
@@ -66,8 +68,16 @@ export class BargraphComponent implements OnInit, AfterViewInit {
       else if (keystr.length>14 || array.length>4)
         keystr = keystr.split(' ').join('\n');
       
-      chartData.push([keystr, data[key]]);
+      if(data[key] > highestData)
+      {
+        highest = index;
+        highestData = data[key]
+      }
+
+      chartData.push([keystr, data[key], 'opacity: 0.45']);
     });
+    console.log(chartData)
+    chartData[highest+1][2] = 'opacity: 1';
 
     this.drawChart(chartData);
   }

@@ -33,7 +33,7 @@ export class VotingElectionPanelComponent implements OnInit {
   {
     let img = this.images.get(name);
     if(img == undefined)
-      return "";
+      return "/assets/placeholder.png";
     return img;
   }
 
@@ -149,7 +149,6 @@ export class VotingElectionPanelComponent implements OnInit {
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
       }
-      console.log(this.flexPadding, this.post);
 
       this.students.forEach((value) => {
         if(value == undefined) return;

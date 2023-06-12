@@ -1,346 +1,334 @@
 {
 	"Head Boy": [
 		{
-			"name": "Neerav Takker0",
-			"image": "test5.jpg"
+			"name": "Aditya Malik",
+			"image": "test1.jpg"
 		},
 		{
-			"name": "Neerav Takker1",
-			"image": "test5.jpg"
+			"name": "Daksh Baghla",
+			"image": "test2.jpg"
 		},
 		{
-			"name": "Neerav Takker2",
+			"name": "Ashok Patel",
 			"image": "test3.jpg"
+		},
+		{
+			"name": "Mithil Pandya",
+			"image": "test4.jpg"
 		}
 	],
 	"Head Girl": [
 		{
-			"name": "Manas Sarungbam0",
+			"name": "Shanaya Sharma",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Manas Sarungbam1",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam2",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam3",
+			"name": "Ananya Adhav",
 			"image": "test3.jpg"
 		},
 		{
-			"name": "Manas Sarungbam4",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam5",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Manas Sarungbam6",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Manas Sarungbam7",
-			"image": "test5.jpg"
+			"name": "Eshta Viccajee",
+			"image": "test2.jpg"
 		}
 	],
 	"Cultural Captain": [
 		{
-			"name": "Neerav Takker0",
+			"name": "Krishiv Rajan",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Yug Srivastava",
 			"image": "test5.jpg"
 		},
 		{
-			"name": "Neerav Takker1",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Neerav Takker2",
-			"image": "test3.jpg"
-		},
-		{
-			"name": "Neerav Takker3",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Neerav Takker5",
-			"image": "test2.jpg"
+			"name": "Subhalina Mitra",
+			"image": "test1.jpg"
 		}
 	],
 	"Cultural Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Manas Sarungbam1",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Manas Sarungbam2",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam3",
+			"name": "Kanishk Shivkumar",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Manas Sarungbam4",
+			"name": "Sarakshi Vyas",
 			"image": "test1.jpg"
+		},
+		{
+			"name": "Mariyah Sanchawala",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Faiz Sayed",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Aarnavi Deshmukh",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Jeet Bhaskar",
+			"image": "test3.jpg"
 		}
 	],
 	"Sports Captain": [
 		{
-			"name": "Neerav Takker0",
+			"name": "Drishti Iyer",
 			"image": "test2.jpg"
 		},
 		{
-			"name": "Neerav Takker1",
+			"name": "Meet Gosavi",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Ria Sharma",
 			"image": "test5.jpg"
 		},
 		{
-			"name": "Neerav Takker2",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Neerav Takker3",
+			"name": "Kshitij Shyam",
 			"image": "test1.jpg"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker5",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Neerav Takker6",
-			"image": "test5.jpg"
 		}
 	],
 	"Sports Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Manas Sarungbam1",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Manas Sarungbam2",
+			"name": "Shaligram Shirgaonkar",
 			"image": "test1.jpg"
 		},
 		{
-			"name": "Manas Sarungbam3",
-			"image": "test2.jpg"
-		},
-		{
-			"name": "Manas Sarungbam4",
+			"name": "Husain Patel",
 			"image": "test3.jpg"
 		},
 		{
-			"name": "Manas Sarungbam5",
+			"name": "Shlok Gandhi",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Ziyaad Momin",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Amrut Jampana",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Manas Sarungbam6",
+			"name": "Chelena Pandian",
 			"image": "test2.jpg"
+		},
+		{
+			"name": "Hemant Kumawat",
+			"image": "test1.jpg"
 		}
 	],
 	"Red House Captain": [
 		{
-			"name": "Neerav Takker0",
-			"image": "test4.jpg"
+			"name": "Aarush Sharma",
+			"image": "test3.jpg"
 		},
 		{
-			"name": "Neerav Takker1",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Neerav Takker2",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Neerav Takker3",
+			"name": "Zuhaa Bori",
 			"image": "test2.jpg"
 		},
 		{
-			"name": "Neerav Takker4",
+			"name": "Imaad Nazish",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Shruti Joshi",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Ria Sharma",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Aarav Viccajee",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Preet Patel",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Ishita Singh",
 			"image": "test3.jpg"
 		}
 	],
 	"Red House Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Manas Sarungbam1",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Manas Sarungbam2",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Manas Sarungbam3",
-			"image": "test3.jpg"
-		},
-		{
-			"name": "Manas Sarungbam4",
+			"name": "Aryan Sehgal",
 			"image": "test5.jpg"
 		},
 		{
-			"name": "Manas Sarungbam5",
+			"name": "Akshra Kumari",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Soumya Singh",
 			"image": "test1.jpg"
+		},
+		{
+			"name": "Viraj Patne",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Kartiki Belwate",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Gargee Shirke",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Moinnuddin Shaikh",
+			"image": "test3.jpg"
 		}
 	],
 	"Blue House Captain": [
 		{
-			"name": "Neerav Takker0",
+			"name": "Atharva Deshmukh",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Suraj Dube",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Neerav Takker1",
+			"name": "Vishwa Patel",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Om Shinde",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Hazel Thakker",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Dia Jhalani",
 			"image": "test1.jpg"
-		},
-		{
-			"name": "Neerav Takker2",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Neerav Takker3",
-			"image": "test5.jpg"
 		}
 	],
 	"Blue House Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Manas Sarungbam1",
+			"name": "Bhaargav Devangam",
 			"image": "test2.jpg"
 		},
 		{
-			"name": "Manas Sarungbam2",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Manas Sarungbam3",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam4",
+			"name": "Deep Patil",
 			"image": "test3.jpg"
 		},
 		{
-			"name": "Manas Sarungbam5",
+			"name": "Sanika Gowda",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Manas Sarungbam6",
+			"name": "Ananya Dodamani",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Shreyas Rode",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Trinabh Singh",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Avi Sharma",
 			"image": "test2.jpg"
+		},
+		{
+			"name": "Murtaza Tinwala",
+			"image": "test4.jpg"
 		}
 	],
 	"Green House Captain": [
 		{
-			"name": "Neerav Takker0",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker1",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker2",
-			"image": "test1.jpg"
-		},
-		{
-			"name": "Neerav Takker3",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker5",
+			"name": "Amrut Jampana",
 			"image": "test2.jpg"
+		},
+		{
+			"name": "Mohammed Ihsaan",
+			"image": "test4.jpg"
+		},
+		{
+			"name": "Sadhvi Patil",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Diya Malu",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Asthha Sardey",
+			"image": "test1.jpg"
 		}
 	],
 	"Green House Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test3.jpg"
-		},
-		{
-			"name": "Manas Sarungbam1",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Manas Sarungbam2",
+			"name": "Harshvardhan Patil",
 			"image": "test2.jpg"
 		},
 		{
-			"name": "Manas Sarungbam3",
-			"image": "test4.jpg"
+			"name": "Aditri Naru",
+			"image": "test5.jpg"
+		},
+		{
+			"name": "Armaan Sekhon",
+			"image": "test1.jpg"
+		},
+		{
+			"name": "Pratik Narayanan",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Sharanya Yadav",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Janhavi Shelke",
+			"image": "test1.jpg"
 		}
 	],
 	"Yellow House Captain": [
 		{
-			"name": "Neerav Takker0",
-			"image": "test5.jpg"
-		},
-		{
-			"name": "Neerav Takker1",
+			"name": "Yohan Kurien",
 			"image": "test1.jpg"
 		},
 		{
-			"name": "Neerav Takker2",
-			"image": "test4.jpg"
+			"name": "Heetnya Patel",
+			"image": "test2.jpg"
 		},
 		{
-			"name": "Neerav Takker3",
-			"image": "test4.jpg"
-		},
-		{
-			"name": "Neerav Takker4",
-			"image": "test4.jpg"
+			"name": "Pragya Gupta",
+			"image": "test3.jpg"
 		}
 	],
 	"Yellow House Vice-Captain": [
 		{
-			"name": "Manas Sarungbam0",
-			"image": "test2.jpg"
+			"name": "Varoon Vazirani",
+			"image": "test5.jpg"
 		},
 		{
-			"name": "Manas Sarungbam1",
+			"name": "Sudhanshu Singh",
 			"image": "test4.jpg"
 		},
 		{
-			"name": "Manas Sarungbam2",
+			"name": "Vedang Prabhutendolkar",
+			"image": "test3.jpg"
+		},
+		{
+			"name": "Gauri Singh",
+			"image": "test2.jpg"
+		},
+		{
+			"name": "Diptisha Jana",
 			"image": "test1.jpg"
 		},
 		{
-			"name": "Manas Sarungbam3",
-			"image": "test3.jpg"
-		},
-		{
-			"name": "Manas Sarungbam4",
-			"image": "test3.jpg"
-		},
-		{
-			"name": "Manas Sarungbam5",
-			"image": "test5.jpg"
+			"name": "Advait Jadhav",
+			"image": "test4.jpg"
 		}
 	],
 	"Password": "test123",
