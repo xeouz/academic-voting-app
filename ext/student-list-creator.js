@@ -40,7 +40,7 @@ function createSampleStudents()
 
         for(let i=0; i<randomInteger(3,10); ++i)
         {
-            addStudent(post, name+i.toString(), 'test'+randomInteger(1, 5)+'.jpg');
+            addStudent(post, name+i.toString(), 'test'+randomInteger(1, 5)+'.jpeg');
         }
     }
 }
@@ -49,121 +49,121 @@ let post;
 
 // Head Boy
 post = 'Head Boy'
-addStudent(post, 'Aditya Malik', 'test1.jpg');
-addStudent(post, 'Daksh Baghla', 'test2.jpg');
-addStudent(post, 'Ashok Patel', 'test3.jpg');
-addStudent(post, 'Mithil Pandya', 'test4.jpg');
+addStudent(post, 'Aditya Malik', 'aditya-malik.jpeg');
+addStudent(post, 'Daksh Baghla', '');
+addStudent(post, 'Ashok Patel', '');
+addStudent(post, 'Mithil Pandya', '');
 
 // Head Girl
 post = 'Head Girl'
-addStudent(post, 'Shanaya Sharma', 'test4.jpg');
-addStudent(post, 'Ananya Adhav', 'test3.jpg');
-addStudent(post, 'Eshta Viccajee', 'test2.jpg');
+addStudent(post, 'Shanaya Sharma', 'shanaya-sharma.jpeg');
+addStudent(post, 'Ananya Adhav', '');
+addStudent(post, 'Eshta Viccajee', '');
 
 // Cultural Captain
 post = 'Cultural Captain'
-addStudent(post, 'Krishiv Rajan', 'test2.jpg');
-addStudent(post, 'Yug Srivastava', 'test5.jpg');
-addStudent(post, 'Subhalina Mitra', 'test1.jpg');
+addStudent(post, 'Krishiv Rajan', 'krishiv-rajan.jpeg');
+addStudent(post, 'Yug Srivastava', '');
+addStudent(post, 'Subhalina Mitra', '');
 
 // Cultural Vice-Captain
 post = 'Cultural Vice-Captain'
-addStudent(post, 'Kanishk Shivkumar', 'test4.jpg');
-addStudent(post, 'Sarakshi Vyas', 'test1.jpg');
-addStudent(post, 'Mariyah Sanchawala', 'test2.jpg');
-addStudent(post, 'Faiz Sayed', 'test5.jpg');
-addStudent(post, 'Aarnavi Deshmukh', 'test1.jpg');
-addStudent(post, 'Jeet Bhaskar', 'test3.jpg');
+addStudent(post, 'Kanishk Shivkumar', '');
+addStudent(post, 'Sarakshi Vyas', '');
+addStudent(post, 'Mariyah Sanchawala', '');
+addStudent(post, 'Faiz Sayed', '');
+addStudent(post, 'Aarnavi Deshmukh', '');
+addStudent(post, 'Jeet Bhaskar', '');
 
 // Sports Captain
 post = 'Sports Captain'
-addStudent(post, 'Drishti Iyer', 'test2.jpg')
-addStudent(post, 'Meet Gosavi', 'test3.jpg')
-addStudent(post, 'Ria Sharma', 'test5.jpg')
-addStudent(post, 'Kshitij Shyam', 'test1.jpg')
+addStudent(post, 'Drishti Iyer', '')
+addStudent(post, 'Meet Gosavi', 'meet-gosavi.jpeg')
+addStudent(post, 'Ria Sharma', '')
+addStudent(post, 'Kshitij Shyam', '')
 
 // Sports Vice-Captain
 post = 'Sports Vice-Captain'
-addStudent(post, 'Shaligram Shirgaonkar', 'test1.jpg')
-addStudent(post, 'Husain Patel', 'test3.jpg')
-addStudent(post, 'Shlok Gandhi', 'test2.jpg')
-addStudent(post, 'Ziyaad Momin', 'test5.jpg')
-addStudent(post, 'Amrut Jampana', 'test4.jpg')
-addStudent(post, 'Chelena Pandian', 'test2.jpg')
-addStudent(post, 'Hemant Kumawat', 'test1.jpg')
+addStudent(post, 'Shaligram Shirgaonkar', '')
+addStudent(post, 'Husain Patel', '')
+addStudent(post, 'Shlok Gandhi', '')
+addStudent(post, 'Ziyaad Momin', '')
+addStudent(post, 'Amrut Jampana', '')
+addStudent(post, 'Chelena Pandian', '')
+addStudent(post, 'Hemant Kumawat', 'hemant-kumawat.jpeg')
 
 // Red House Captain
 post = 'Red House Captain'
-addStudent(post, 'Aarush Sharma', 'test3.jpg')
-addStudent(post, 'Zuhaa Bori', 'test2.jpg')
-addStudent(post, 'Imaad Nazish', 'test1.jpg')
-addStudent(post, 'Shruti Joshi', 'test4.jpg')
-addStudent(post, 'Ria Sharma', 'test5.jpg')
-addStudent(post, 'Aarav Viccajee', 'test2.jpg')
-addStudent(post, 'Preet Patel', 'test4.jpg')
-addStudent(post, 'Ishita Singh', 'test3.jpg')
+addStudent(post, 'Aarush Sharma', '')
+addStudent(post, 'Zuhaa Bori', '')
+addStudent(post, 'Imaad Nazish', '')
+addStudent(post, 'Shruti Joshi', '')
+addStudent(post, 'Ria Sharma', '')
+addStudent(post, 'Aarav Viccajee', '')
+addStudent(post, 'Preet Patel', '')
+addStudent(post, 'Ishita Singh', '')
 
 // Red House Vice-Captain
 post = 'Red House Vice-Captain'
-addStudent(post, 'Aryan Sehgal', 'test5.jpg')
-addStudent(post, 'Akshra Kumari', 'test2.jpg')
-addStudent(post, 'Soumya Singh', 'test1.jpg')
-addStudent(post, 'Viraj Patne', 'test3.jpg')
-addStudent(post, 'Kartiki Belwate', 'test1.jpg')
-addStudent(post, 'Gargee Shirke', 'test4.jpg')
-addStudent(post, 'Moinnuddin Shaikh', 'test3.jpg')
+addStudent(post, 'Aryan Sehgal', 'aryan-sehgal.jpeg')
+addStudent(post, 'Akshara Kumari', 'akshara-kumari.jpeg')
+addStudent(post, 'Soumya Singh', '')
+addStudent(post, 'Viraj Patne', 'viraj-patne.jpeg')
+addStudent(post, 'Kartiki Belwate', 'kartiki-belwate.jpeg')
+addStudent(post, 'Gargee Shirke', 'gargee-shirke.jpeg')
+addStudent(post, 'Moinnuddin Shaikh', '')
 
 // Blue House Captain
 post = 'Blue House Captain'
-addStudent(post, 'Atharva Deshmukh', 'test5.jpg')
-addStudent(post, 'Suraj Dube', 'test4.jpg')
-addStudent(post, 'Vishwa Patel', 'test4.jpg')
-addStudent(post, 'Om Shinde', 'test3.jpg')
-addStudent(post, 'Hazel Thakker', 'test2.jpg')
-addStudent(post, 'Dia Jhalani', 'test1.jpg')
+addStudent(post, 'Atharva Deshmukh', '')
+addStudent(post, 'Suraj Dube', '')
+addStudent(post, 'Vishwa Patel', '')
+addStudent(post, 'Om Shinde', '')
+addStudent(post, 'Hazel Thakker', '')
+addStudent(post, 'Dia Jhalani', '')
 
 // Blue House Vice-Captain
 post = 'Blue House Vice-Captain'
-addStudent(post, 'Bhaargav Devangam', 'test2.jpg')
-addStudent(post, 'Deep Patil', 'test3.jpg')
-addStudent(post, 'Sanika Gowda', 'test4.jpg')
-addStudent(post, 'Ananya Dodamani', 'test5.jpg')
-addStudent(post, 'Shreyas Rode', 'test1.jpg')
-addStudent(post, 'Trinabh Singh', 'test3.jpg')
-addStudent(post, 'Avi Sharma', 'test2.jpg')
-addStudent(post, 'Murtaza Tinwala', 'test4.jpg')
+addStudent(post, 'Bhaargav Devangam', 'bhaargav-devangam.jpeg')
+addStudent(post, 'Deep Patil', '')
+addStudent(post, 'Sanika Gowda', 'sanik-gowda.jpeg')
+addStudent(post, 'Ananya Dodamani', 'ananya-dodamani.jpeg')
+addStudent(post, 'Shreyas Rode', 'shreyas-rode.jpeg')
+addStudent(post, 'Trinabh Singh', '')
+addStudent(post, 'Avi Sharma', 'avi-sharma.jpeg')
+addStudent(post, 'Murtaza Tinwala', '')
 
 // Green House Captain
 post = 'Green House Captain'
-addStudent(post, 'Amrut Jampana', 'test2.jpg')
-addStudent(post, 'Mohammed Ihsaan', 'test4.jpg')
-addStudent(post, 'Sadhvi Patil', 'test3.jpg')
-addStudent(post, 'Diya Malu', 'test5.jpg')
-addStudent(post, 'Asthha Sardey', 'test1.jpg')
+addStudent(post, 'Amrut Jampana', '')
+addStudent(post, 'Mohammed Ihsaan', 'mohammed-ihsaan.jpeg')
+addStudent(post, 'Sadhvi Patil', '')
+addStudent(post, 'Diya Malu', '')
+addStudent(post, 'Asthha Sardey', '')
 
 // Green House Vice-Captain
 post = 'Green House Vice-Captain'
-addStudent(post, 'Harshvardhan Patil', 'test2.jpg')
-addStudent(post, 'Aditri Naru', 'test5.jpg')
-addStudent(post, 'Armaan Sekhon', 'test1.jpg')
-addStudent(post, 'Pratik Narayanan', 'test3.jpg')
-addStudent(post, 'Sharanya Yadav', 'test2.jpg')
-addStudent(post, 'Janhavi Shelke', 'test1.jpg')
+addStudent(post, 'Harshvardhan Patil', 'harshavardhan-patil.jpeg')
+addStudent(post, 'Aditri Naru', '')
+addStudent(post, 'Armaan Sekhon', '')
+addStudent(post, 'Pratik Narayanan', 'pratik-narayanan.jpeg')
+addStudent(post, 'Sharanya Yadav', '')
+addStudent(post, 'Janhavi Shelke', '')
 
 // Yellow House Captain
 post = 'Yellow House Captain'
-addStudent(post, 'Yohan Kurien', 'test1.jpg')
-addStudent(post, 'Heetnya Patel', 'test2.jpg')
-addStudent(post, 'Pragya Gupta', 'test3.jpg')
+addStudent(post, 'Yohan Kurien', 'yohan-kurien.jpeg')
+addStudent(post, 'Heetnya Patel', '')
+addStudent(post, 'Pragya Gupta', '')
 
 // Yellow House Vice-Captain
 post = 'Yellow House Vice-Captain'
-addStudent(post, 'Varoon Vazirani', 'test5.jpg')
-addStudent(post, 'Sudhanshu Singh', 'test4.jpg')
-addStudent(post, 'Vedang Prabhutendolkar', 'test3.jpg')
-addStudent(post, 'Gauri Singh', 'test2.jpg')
-addStudent(post, 'Diptisha Jana', 'test1.jpg')
-addStudent(post, 'Advait Jadhav', 'test4.jpg')
+addStudent(post, 'Varoon Vazirani', 'varoon-vazirani.jpeg')
+addStudent(post, 'Sudhanshu Singh', '')
+addStudent(post, 'Vedang Prabhutendolkar', '')
+addStudent(post, 'Gauri Singh', '')
+addStudent(post, 'Diptisha Jana', '')
+addStudent(post, 'Advait Jadhav', '')
 
 data['Password'] = "test123";
 data['DataPassword'] = "data123";
