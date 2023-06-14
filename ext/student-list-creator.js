@@ -73,6 +73,7 @@ addStudent(post, 'Sarakshi Vyas', 'sarakshi-vyas.jpeg');
 addStudent(post, 'Mariyah Sanchawala', 'mariyah-sanchawala.jpeg');
 addStudent(post, 'Faiz Sayed', 'faiz-sayed.jpeg');
 addStudent(post, 'Aarnavi Deshmukh', 'aarnavi-deshmukh.jpeg');
+addStudent(post, 'Niralee Pathak', 'niralee-pathak.jpeg');
 addStudent(post, 'Jeet Bhaskar', '');
 
 // Sports Captain
@@ -93,7 +94,7 @@ addStudent(post, 'Hemant Kumawat', 'hemant-kumawat.jpeg')
 // Red House Captain
 post = 'Red House Captain'
 addStudent(post, 'Aarush Sharma', 'aarush-sharma.jpeg')
-addStudent(post, 'Zuhaa Bori', 'zuhaa-bori.jpeg')
+addStudent(post, 'Zuha Bori', 'zuha-bori.jpeg')
 addStudent(post, 'Imaad Nazish', 'imaad-nazish.jpeg')
 addStudent(post, 'Shruti Joshi', 'shruti-joshi.jpeg')
 addStudent(post, 'Ria Sharma', 'ria-sharma.jpeg')
@@ -103,13 +104,13 @@ addStudent(post, 'Ishita Singh', 'ishita-singh.jpeg')
 
 // Red House Vice-Captain
 post = 'Red House Vice-Captain'
-addStudent(post, 'Aryan Sehgal', 'aryan-sehgal.jpeg')
+addStudent(post, 'Aaryan Sehgal', 'aaryan-sehgal.jpeg')
 addStudent(post, 'Akshara Kumari', 'akshara-kumari.jpeg')
 addStudent(post, 'Soumya Singh', 'soumya-singh.jpeg')
-addStudent(post, 'Viraj Patne', 'viraj-patne.jpeg')
 addStudent(post, 'Kartiki Belwate', 'kartiki-belwate.jpeg')
 addStudent(post, 'Gargee Shirke', 'gargee-shirke.jpeg')
 addStudent(post, 'Moinnuddin Shaikh', 'moinuddin-shaikh.jpeg')
+addStudent(post, 'Viraj Patne', '')
 
 // Blue House Captain
 post = 'Blue House Captain'
@@ -124,27 +125,30 @@ addStudent(post, 'Dia Jhalani', 'dia-jhalani.jpeg')
 post = 'Blue House Vice-Captain'
 addStudent(post, 'Bhaargav Devangam', 'bhaargav-devangam.jpeg')
 addStudent(post, 'Deep Patil', 'deep-patil.jpeg')
-addStudent(post, 'Sanika Gowda', 'sanik-gowda.jpeg')
+addStudent(post, 'Sanika Gowda', 'sanika-gowda.jpeg')
 addStudent(post, 'Ananya Dodamani', 'ananya-dodamani.jpeg')
 addStudent(post, 'Shreyas Rode', 'shreyas-rode.jpeg')
 addStudent(post, 'Trinabh Singh', 'trinabh-singh.jpeg')
 addStudent(post, 'Avi Sharma', 'avi-sharma.jpeg')
 addStudent(post, 'Murtaza Tinwala', 'murtuza-tinwala.jpeg')
+addStudent(post, 'Atharva Chavan', '')
 
 // Green House Captain
 post = 'Green House Captain'
 addStudent(post, 'Mohammed Ihsaan', 'mohammed-ihsaan.jpeg')
-addStudent(post, 'Sadhvi Patil', 'sadhvi-patil.jpeg')
 addStudent(post, 'Diya Malu', 'diya-malu.jpeg')
 addStudent(post, 'Asthha Sardey', 'asttha-sardey.jpeg')
+addStudent(post, 'Sadhvi Patil', '')
 
 // Green House Vice-Captain
 post = 'Green House Vice-Captain'
-addStudent(post, 'Harshvardhan Patil', 'harshavardhan-patil.jpeg')
+addStudent(post, 'Harshvardhan Patil', 'harshvardhan-patil.jpeg')
 addStudent(post, 'Aditri Naru', 'aditra-naru.jpeg')
 addStudent(post, 'Armaan Sekhon', 'armaan-sekhon.jpeg')
 addStudent(post, 'Pratik Narayanan', 'pratik-narayanan.jpeg')
 addStudent(post, 'Janhavi Shelke', 'janhavi-shelke.jpeg')
+addStudent(post, 'Faiza Sayed', '')
+addStudent(post, 'Akshita Puri', '')
 
 // Yellow House Captain
 post = 'Yellow House Captain'
@@ -158,8 +162,9 @@ addStudent(post, 'Varoon Vazirani', 'varoon-vazirani.jpeg')
 addStudent(post, 'Sudhanshu Singh', 'sudhanshu-singh.jpeg')
 addStudent(post, 'Vedaang Prabhutendolkar', 'vedaang-prabhutendolkar.jpeg')
 addStudent(post, 'Gauri Singh', 'gauri-singh.jpeg')
-addStudent(post, 'Diptisha Jana', '')
 addStudent(post, 'Advait Jadhav', 'advait-jadhav.jpeg')
+addStudent(post, 'Reva Marchand', '')
+addStudent(post, 'Diptisha Jana', '')
 
 data['Password'] = "test123";
 data['DataPassword'] = "data123";

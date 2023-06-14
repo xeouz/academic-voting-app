@@ -1,5 +1,5 @@
 import { transition, trigger, style, state, animate, keyframes } from '@angular/animations';
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { AfterContentInit, Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DataSnapshot } from 'firebase/database';
 import { VjhsDatabaseService } from 'src/app/vjhs-database.service';
@@ -33,7 +33,7 @@ const smoothResize = trigger('smoothResize', [
   styleUrls: ['./voting-panel.component.css'],
   animations: [fadeReappear, smoothResize],
 })
-export class VotingPanelComponent implements OnInit {
+export class VotingPanelComponent implements OnInit, AfterContentInit {
   screenTitleText = "";
   currentProgressBarCompletion = 5;
   newProgressBarCompletion = 5;
@@ -121,7 +121,7 @@ export class VotingPanelComponent implements OnInit {
   {
     this.maxSelection = 1;
     this.selectNavbar(1);
-    this.docElem.requestFullscreen();
+    //this.docElem.requestFullscreen();
   }
 
   resetPanels()
@@ -134,6 +134,8 @@ export class VotingPanelComponent implements OnInit {
 
   onFullscreenChanged(event: Event)
   {
+    if(!['red', 'blue', 'green', 'yellow'].includes(this.houseText.toLowerCase()))
+      this.houseText = 'red';
     this.db_service.setHouseFullscreen(this.houseText, document.fullscreenElement!=null);
     if(!document.fullscreenElement)
     {
@@ -159,7 +161,9 @@ export class VotingPanelComponent implements OnInit {
   
   studentData: any;
   ngOnInit(): void {
+  }
 
+  ngAfterContentInit(): void {
     this.docElem = document.documentElement;
     this.docElem.addEventListener("fullscreenchange", (event) => this.onFullscreenChanged(event));
 

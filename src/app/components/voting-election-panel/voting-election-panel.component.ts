@@ -49,6 +49,8 @@ export class VotingElectionPanelComponent implements OnInit {
 
     if(this.selectedPerson != 0)
       this.db_service.addVote(this.post, this.getImageFooter(this.selectedPerson-1));
+    else
+      this.db_service.addVote(this.post, 'NOTA');
   }
 
   onContinueClicked()
@@ -143,9 +145,9 @@ export class VotingElectionPanelComponent implements OnInit {
       else if(this.students.length < 15)
       {
         if(width>800)
-          this.flexPadding = "8rem";
+          this.flexPadding = "1rem";
         else
-          this.flexPadding = "2.5rem";
+          this.flexPadding = "20rem";
         this.firstButtonClass = "first-button-sm";
         this.otherButtonClass = "other-button-sm";
       }

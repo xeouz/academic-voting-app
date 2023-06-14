@@ -67,6 +67,10 @@
 			"image": "aarnavi-deshmukh.jpeg"
 		},
 		{
+			"name": "Niralee Pathak",
+			"image": "niralee-pathak.jpeg"
+		},
+		{
 			"name": "Jeet Bhaskar",
 			"image": ""
 		}
@@ -117,8 +121,8 @@
 			"image": "aarush-sharma.jpeg"
 		},
 		{
-			"name": "Zuhaa Bori",
-			"image": "zuhaa-bori.jpeg"
+			"name": "Zuha Bori",
+			"image": "zuha-bori.jpeg"
 		},
 		{
 			"name": "Imaad Nazish",
@@ -147,8 +151,8 @@
 	],
 	"Red House Vice-Captain": [
 		{
-			"name": "Aryan Sehgal",
-			"image": "aryan-sehgal.jpeg"
+			"name": "Aaryan Sehgal",
+			"image": "aaryan-sehgal.jpeg"
 		},
 		{
 			"name": "Akshara Kumari",
@@ -157,10 +161,6 @@
 		{
 			"name": "Soumya Singh",
 			"image": "soumya-singh.jpeg"
-		},
-		{
-			"name": "Viraj Patne",
-			"image": "viraj-patne.jpeg"
 		},
 		{
 			"name": "Kartiki Belwate",
@@ -173,6 +173,10 @@
 		{
 			"name": "Moinnuddin Shaikh",
 			"image": "moinuddin-shaikh.jpeg"
+		},
+		{
+			"name": "Viraj Patne",
+			"image": ""
 		}
 	],
 	"Blue House Captain": [
@@ -212,7 +216,7 @@
 		},
 		{
 			"name": "Sanika Gowda",
-			"image": "sanik-gowda.jpeg"
+			"image": "sanika-gowda.jpeg"
 		},
 		{
 			"name": "Ananya Dodamani",
@@ -233,6 +237,10 @@
 		{
 			"name": "Murtaza Tinwala",
 			"image": "murtuza-tinwala.jpeg"
+		},
+		{
+			"name": "Atharva Chavan",
+			"image": ""
 		}
 	],
 	"Green House Captain": [
@@ -241,22 +249,22 @@
 			"image": "mohammed-ihsaan.jpeg"
 		},
 		{
-			"name": "Sadhvi Patil",
-			"image": "sadhvi-patil.jpeg"
-		},
-		{
 			"name": "Diya Malu",
 			"image": "diya-malu.jpeg"
 		},
 		{
 			"name": "Asthha Sardey",
 			"image": "asttha-sardey.jpeg"
+		},
+		{
+			"name": "Sadhvi Patil",
+			"image": ""
 		}
 	],
 	"Green House Vice-Captain": [
 		{
 			"name": "Harshvardhan Patil",
-			"image": "harshavardhan-patil.jpeg"
+			"image": "harshvardhan-patil.jpeg"
 		},
 		{
 			"name": "Aditri Naru",
@@ -273,6 +281,14 @@
 		{
 			"name": "Janhavi Shelke",
 			"image": "janhavi-shelke.jpeg"
+		},
+		{
+			"name": "Faiza Sayed",
+			"image": ""
+		},
+		{
+			"name": "Akshita Puri",
+			"image": ""
 		}
 	],
 	"Yellow House Captain": [
@@ -307,12 +323,16 @@
 			"image": "gauri-singh.jpeg"
 		},
 		{
-			"name": "Diptisha Jana",
+			"name": "Advait Jadhav",
+			"image": "advait-jadhav.jpeg"
+		},
+		{
+			"name": "Reva Marchand",
 			"image": ""
 		},
 		{
-			"name": "Advait Jadhav",
-			"image": "advait-jadhav.jpeg"
+			"name": "Diptisha Jana",
+			"image": ""
 		}
 	],
 	"Password": "test123",

@@ -45,7 +45,7 @@ export class VjhsDatabaseService {
     let data: any = {};
     data.global_votes = {total: 0};
     this.posts.forEach((val) => {
-      let candidates_data: any = {total: 0};
+      let candidates_data: any = {total: 0, nota: 0};
       studentList[val].forEach((candidate: any) => {
         candidates_data[candidate['name']] = 0;
       });
@@ -154,6 +154,14 @@ export class VjhsDatabaseService {
         let post_name = post;
         if (post == "House Captain" || post == "House Vice-Captain")
           post_name = house + " " + post;
+        
+        if(this.votePosts[post] == 'NOTA')
+        {
+          data[post_name]['nota']++;
+          data[post_name]['total']++;
+          data['total']++;
+          return;
+        }
 
         data[post_name][this.votePosts[post]]++;
         data[post_name]['total']++;
