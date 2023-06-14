@@ -6,15 +6,15 @@
 		},
 		{
 			"name": "Daksh Baghla",
-			"image": ""
+			"image": "daksh-baghla.jpeg"
 		},
 		{
 			"name": "Ashok Patel",
-			"image": ""
+			"image": "ashok-patel.jpeg"
 		},
 		{
 			"name": "Mithil Pandya",
-			"image": ""
+			"image": "mithil-pandya.jpeg"
 		}
 	],
 	"Head Girl": [
@@ -24,11 +24,11 @@
 		},
 		{
 			"name": "Ananya Adhav",
-			"image": ""
+			"image": "ananya-adhav.jpeg"
 		},
 		{
 			"name": "Eshta Viccajee",
-			"image": ""
+			"image": "eshta-viccajee.jpeg"
 		}
 	],
 	"Cultural Captain": [
@@ -38,33 +38,33 @@
 		},
 		{
 			"name": "Yug Srivastava",
-			"image": ""
+			"image": "yug-srivastava.jpeg"
 		},
 		{
-			"name": "Subhalina Mitra",
-			"image": ""
+			"name": "Shubhalina Mitra",
+			"image": "shubhalina-mitra.jpeg"
 		}
 	],
 	"Cultural Vice-Captain": [
 		{
 			"name": "Kanishk Shivkumar",
-			"image": ""
+			"image": "kanishk-shivkumar.jpeg"
 		},
 		{
 			"name": "Sarakshi Vyas",
-			"image": ""
+			"image": "sarakshi-vyas.jpeg"
 		},
 		{
 			"name": "Mariyah Sanchawala",
-			"image": ""
+			"image": "mariyah-sanchawala.jpeg"
 		},
 		{
 			"name": "Faiz Sayed",
-			"image": ""
+			"image": "faiz-sayed.jpeg"
 		},
 		{
 			"name": "Aarnavi Deshmukh",
-			"image": ""
+			"image": "aarnavi-deshmukh.jpeg"
 		},
 		{
 			"name": "Jeet Bhaskar",
@@ -74,45 +74,37 @@
 	"Sports Captain": [
 		{
 			"name": "Drishti Iyer",
-			"image": ""
+			"image": "drishti-iyer.jpeg"
 		},
 		{
 			"name": "Meet Gosavi",
 			"image": "meet-gosavi.jpeg"
 		},
 		{
-			"name": "Ria Sharma",
-			"image": ""
-		},
-		{
 			"name": "Kshitij Shyam",
-			"image": ""
+			"image": "kshitij-shyam.jpeg"
 		}
 	],
 	"Sports Vice-Captain": [
 		{
 			"name": "Shaligram Shirgaonkar",
-			"image": ""
+			"image": "shaligram-shirgaonkar.jpeg"
 		},
 		{
-			"name": "Husain Patel",
-			"image": ""
+			"name": "Hussain Patel",
+			"image": "hussain-patel.jpeg"
 		},
 		{
 			"name": "Shlok Gandhi",
-			"image": ""
-		},
-		{
-			"name": "Ziyaad Momin",
-			"image": ""
+			"image": "shlok-gandhi.jpeg"
 		},
 		{
 			"name": "Amrut Jampana",
-			"image": ""
+			"image": "amrut-jampana.jpeg"
 		},
 		{
 			"name": "Chelena Pandian",
-			"image": ""
+			"image": "chelena-pandian.jpeg"
 		},
 		{
 			"name": "Hemant Kumawat",
@@ -122,35 +114,35 @@
 	"Red House Captain": [
 		{
 			"name": "Aarush Sharma",
-			"image": ""
+			"image": "aarush-sharma.jpeg"
 		},
 		{
 			"name": "Zuhaa Bori",
-			"image": ""
+			"image": "zuhaa-bori.jpeg"
 		},
 		{
 			"name": "Imaad Nazish",
-			"image": ""
+			"image": "imaad-nazish.jpeg"
 		},
 		{
 			"name": "Shruti Joshi",
-			"image": ""
+			"image": "shruti-joshi.jpeg"
 		},
 		{
 			"name": "Ria Sharma",
-			"image": ""
+			"image": "ria-sharma.jpeg"
 		},
 		{
 			"name": "Aarav Viccajee",
-			"image": ""
+			"image": "aarav-viccajee.jpeg"
 		},
 		{
 			"name": "Preet Patel",
-			"image": ""
+			"image": "preet-patel.jpeg"
 		},
 		{
 			"name": "Ishita Singh",
-			"image": ""
+			"image": "ishita-singh.jpeg"
 		}
 	],
 	"Red House Vice-Captain": [
@@ -164,7 +156,7 @@
 		},
 		{
 			"name": "Soumya Singh",
-			"image": ""
+			"image": "soumya-singh.jpeg"
 		},
 		{
 			"name": "Viraj Patne",
@@ -180,13 +172,13 @@
 		},
 		{
 			"name": "Moinnuddin Shaikh",
-			"image": ""
+			"image": "moinuddin-shaikh.jpeg"
 		}
 	],
 	"Blue House Captain": [
 		{
 			"name": "Atharva Deshmukh",
-			"image": ""
+			"image": "atharva-deshmukh.jpeg"
 		},
 		{
 			"name": "Suraj Dube",
@@ -194,19 +186,19 @@
 		},
 		{
 			"name": "Vishwa Patel",
-			"image": ""
+			"image": "vishwa-patel.jpeg"
 		},
 		{
 			"name": "Om Shinde",
-			"image": ""
+			"image": "om-shinde.jpeg"
 		},
 		{
 			"name": "Hazel Thakker",
-			"image": ""
+			"image": "hazel-thakker.jpeg"
 		},
 		{
 			"name": "Dia Jhalani",
-			"image": ""
+			"image": "dia-jhalani.jpeg"
 		}
 	],
 	"Blue House Vice-Captain": [
@@ -216,7 +208,7 @@
 		},
 		{
 			"name": "Deep Patil",
-			"image": ""
+			"image": "deep-patil.jpeg"
 		},
 		{
 			"name": "Sanika Gowda",
@@ -232,7 +224,7 @@
 		},
 		{
 			"name": "Trinabh Singh",
-			"image": ""
+			"image": "trinabh-singh.jpeg"
 		},
 		{
 			"name": "Avi Sharma",
@@ -240,29 +232,25 @@
 		},
 		{
 			"name": "Murtaza Tinwala",
-			"image": ""
+			"image": "murtuza-tinwala.jpeg"
 		}
 	],
 	"Green House Captain": [
-		{
-			"name": "Amrut Jampana",
-			"image": ""
-		},
 		{
 			"name": "Mohammed Ihsaan",
 			"image": "mohammed-ihsaan.jpeg"
 		},
 		{
 			"name": "Sadhvi Patil",
-			"image": ""
+			"image": "sadhvi-patil.jpeg"
 		},
 		{
 			"name": "Diya Malu",
-			"image": ""
+			"image": "diya-malu.jpeg"
 		},
 		{
 			"name": "Asthha Sardey",
-			"image": ""
+			"image": "asttha-sardey.jpeg"
 		}
 	],
 	"Green House Vice-Captain": [
@@ -272,23 +260,19 @@
 		},
 		{
 			"name": "Aditri Naru",
-			"image": ""
+			"image": "aditra-naru.jpeg"
 		},
 		{
 			"name": "Armaan Sekhon",
-			"image": ""
+			"image": "armaan-sekhon.jpeg"
 		},
 		{
 			"name": "Pratik Narayanan",
 			"image": "pratik-narayanan.jpeg"
 		},
 		{
-			"name": "Sharanya Yadav",
-			"image": ""
-		},
-		{
 			"name": "Janhavi Shelke",
-			"image": ""
+			"image": "janhavi-shelke.jpeg"
 		}
 	],
 	"Yellow House Captain": [
@@ -298,11 +282,11 @@
 		},
 		{
 			"name": "Heetnya Patel",
-			"image": ""
+			"image": "heetnya-patel.jpeg"
 		},
 		{
 			"name": "Pragya Gupta",
-			"image": ""
+			"image": "pragya-gupta.jpeg"
 		}
 	],
 	"Yellow House Vice-Captain": [
@@ -312,15 +296,15 @@
 		},
 		{
 			"name": "Sudhanshu Singh",
-			"image": ""
+			"image": "sudhanshu-singh.jpeg"
 		},
 		{
-			"name": "Vedang Prabhutendolkar",
-			"image": ""
+			"name": "Vedaang Prabhutendolkar",
+			"image": "vedaang-prabhutendolkar.jpeg"
 		},
 		{
 			"name": "Gauri Singh",
-			"image": ""
+			"image": "gauri-singh.jpeg"
 		},
 		{
 			"name": "Diptisha Jana",
@@ -328,7 +312,7 @@
 		},
 		{
 			"name": "Advait Jadhav",
-			"image": ""
+			"image": "advait-jadhav.jpeg"
 		}
 	],
 	"Password": "test123",

@@ -37,7 +37,14 @@ export class VjhsStorageService {
   async getImageURL(path: string)
   {
     const reference = ref(this.storage, 'images/'+path);
-    return await getDownloadURL(reference);
+    try
+    {
+      return await getDownloadURL(reference);
+    }
+    catch
+    {
+      return '';
+    }
   }
 
   async updatePassword(type: string, password: string)

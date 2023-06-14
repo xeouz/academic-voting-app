@@ -1,10 +1,10 @@
 <div class="flex justify-center items-center">
-    <button [ngStyle]="{'background-image': 'url('+imagePath+')', 'opacity':isSelected=='true'?'1':'0.6'}"
+    <button [ngStyle]="{'background-image': 'url('+imagePath+')', 'opacity':isSelected=='true'?'1':'0.6', 'background-size':'100% auto', 'background-position':'center center'}"
 
             (click)="onButtonClick()"
 
-            class="border-gray-700/80 bg-center opacity-100 border-[6px] start-0 bg-origin-content justify-center overflow-hidden flex group items-end min-[1920px]:h-[12rem] min-[1920px]:w-[24rem] h-[11rem] w-[22rem] bg-white/40 rounded-lg transition-all duration-200 
-            ease-out shadow-black/20 shadow-xl hover:shadow-xl hover:shadow-black/30 hover:-translate-y-1 hover:scale-[1.05] bg-cover"
+            class="border-gray-700/80 opacity-100 border-[6px] start-0 bg-origin-content justify-center overflow-hidden flex group items-end min-[1920px]:h-[14rem] min-[1920px]:w-[24rem] h-[12rem] w-[22rem] bg-white/40 rounded-lg transition-all duration-200 
+            ease-out shadow-black/20 shadow-xl hover:shadow-xl hover:shadow-black/30 hover:-translate-y-1 hover:scale-[1.05]"
             >
         <span class="text-[#ECEFF4] h-8 w-[110%] block text-base min-[1920px]:text-xl rounded-sm font-['Poppins'] text-center bg-black/80 group-hover:scale-110 group-hover:text-lg min-[1920px]:group-hover:text-2xl group-hover:h-10 font-semibold tracking-wider transition-all">
             {{imageFooter}}

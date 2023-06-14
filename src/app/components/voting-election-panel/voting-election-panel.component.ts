@@ -155,7 +155,7 @@ export class VotingElectionPanelComponent implements OnInit {
         
         this.stg_service.getImageURL(value.image).then((url) => {
           if(url == '')
-            url = '/assets/placeholder.png'
+            url = '/assets/placeholder.png';
 
           this.images.set(value.name, url);
           

@@ -121,7 +121,7 @@ export class VotingPanelComponent implements OnInit {
   {
     this.maxSelection = 1;
     this.selectNavbar(1);
-    //this.docElem.requestFullscreen();
+    this.docElem.requestFullscreen();
   }
 
   resetPanels()
@@ -169,7 +169,7 @@ export class VotingPanelComponent implements OnInit {
         this.isUsable = false;
         this.currentSelection = 12;
       }
-      //this.db_service.setHouseOpen(this.houseText, true);
+      this.db_service.setHouseOpen(this.houseText, true);
     });
 
     this.stg_service.retrieveStudentList(() => {
@@ -178,7 +178,6 @@ export class VotingPanelComponent implements OnInit {
 
     this.db_service.addHouseListener(this.houseText, (snapshot: DataSnapshot) => {
       const allow = snapshot.val();
-      console.log(allow)
       if(allow == true)
         this.resetPanels();
     });
