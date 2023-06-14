@@ -2,7 +2,7 @@
     <div class="ml-20 font-['Poppins'] text-gray-950/80 text-5xl font-bold flex flex-col">
         <div class="mt-20 mr-10 flex flex-row items-start bg-white/20 p-4 pl-10 rounded-md max-w-[120rem]">
             <p class="font-['Ubuntu_Mono'] min-w-[11rem]">Grade</p>
-            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-7">
+            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-0 min-[1920px]:space-x-7">
                 <button
                 *ngFor="let grade of availableGrades"
                 class="grade-button" 
@@ -12,7 +12,7 @@
         </div>
         <div class="mt-5 mr-10 flex flex-row items-start bg-white/20 p-4 pl-10 rounded-md max-w-[120rem]">
             <p class="font-['Ubuntu_Mono'] pt-2 min-w-[11rem]">Division</p>
-            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-7">
+            <div class="ml-[3.5rem] text-4xl flex flex-row items-start w-full mr-40 text-blue-950/70 space-x-0 min-[1920px]:space-x-7">
                 <button class="division-button" (click)="selectDivision('A')" [disabled]="isDivisionButtonDisabled('A')" [ngStyle]="{'background-color': getDivisionButtonColor('A')}">A</button>
                 <button class="division-button" (click)="selectDivision('B')" [disabled]="isDivisionButtonDisabled('B')" [ngStyle]="{'background-color': getDivisionButtonColor('B')}">B</button>
                 <button class="division-button" (click)="selectDivision('C')" [disabled]="isDivisionButtonDisabled('C')" [ngStyle]="{'background-color': getDivisionButtonColor('C')}">C</button>

@@ -118,7 +118,7 @@ export class VotingElectionPanelComponent implements OnInit {
         if(width>800)
           this.flexPadding = "20rem";
         else
-          this.flexPadding = "7rem";
+          this.flexPadding = "0rem";
         this.firstButtonClass = "first-button";
         this.otherButtonClass = "other-button";
       }

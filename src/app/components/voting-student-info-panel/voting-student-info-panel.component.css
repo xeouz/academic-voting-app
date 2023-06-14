@@ -1,7 +1,7 @@
 .grade-button {
-    @apply grow max-w-[8rem] h-full min-h-[4rem] min-w-[8rem] font-['Ubuntu_Mono'] bg-white/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg hover:scale-105
+    @apply scale-75 min-[1920px]:scale-100 grow max-w-[8rem] h-full min-h-[4rem] min-[1960px]:min-w-[8rem] min-w-[6.7rem] font-['Ubuntu_Mono'] bg-white/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg min-[1920px]:hover:scale-105 hover:scale-90
 }
 
 .division-button {
-    @apply grow max-w-[8rem] h-full min-h-[4rem] min-w-[8rem] font-['Ubuntu_Mono'] bg-purple-200/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg hover:scale-105
+    @apply scale-75 min-[1920px]:scale-100 grow max-w-[8rem] h-full min-h-[4rem] min-[1960px]:min-w-[8rem] min-w-[6.7rem] font-['Ubuntu_Mono'] bg-purple-200/60 rounded-md shadow-md transition-all ease-in duration-75 hover:shadow-lg min-[1920px]:hover:scale-105 hover:scale-90
 }

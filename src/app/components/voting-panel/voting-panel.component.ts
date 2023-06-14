@@ -121,7 +121,7 @@ export class VotingPanelComponent implements OnInit {
   {
     this.maxSelection = 1;
     this.selectNavbar(1);
-    this.docElem.requestFullscreen();
+    //this.docElem.requestFullscreen();
   }
 
   resetPanels()
@@ -169,7 +169,7 @@ export class VotingPanelComponent implements OnInit {
         this.isUsable = false;
         this.currentSelection = 12;
       }
-      this.db_service.setHouseOpen(this.houseText, true);
+      //this.db_service.setHouseOpen(this.houseText, true);
     });
 
     this.stg_service.retrieveStudentList(() => {
@@ -185,7 +185,8 @@ export class VotingPanelComponent implements OnInit {
 
     this.currentSelection = 0;
     this.newProgressBarCompletion = 0;
-    this.isUsable = false;
     this.resetPanels();
+    this.isUsable = false;
+    this.currentSelection = 11;
   }
 }

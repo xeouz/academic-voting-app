@@ -1,5 +1,5 @@
 <div class="h-full w-full flex flex-col items-center">
-    <div class="flex flex-wrap flex-row items-center justify-center pt-6 h-[27rem] w-[98rem] lg:h-[22rem] lg:w-[95rem]" [ngStyle]="{'padding-left':flexPadding, 'padding-right':flexPadding}">
+    <div class="flex flex-wrap flex-row items-center justify-center pt-6 min-[1920px]:h-[27rem] min-[1920px]:w-[98rem] h-[22rem] w-[95rem]" [ngStyle]="{'padding-left':flexPadding, 'padding-right':flexPadding}">
         <app-vote-select-button
         *ngFor="let student of students; let i = index"
         [ngStyle]="{'flex':getFlexPercent()}"
