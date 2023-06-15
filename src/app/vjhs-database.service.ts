@@ -386,15 +386,15 @@ export class VjhsDatabaseService {
       };
       postSheet.getRow(1).height = 28.5;
 
-      postSheet.getColumn('A').width = 18;
-      postSheet.getColumn('B').width = 18.3;
-      postSheet.getColumn('C').width = 5.3;
-      postSheet.getColumn('E').width = 18;
-      postSheet.getColumn('F').width = 18.3;
-      postSheet.getColumn('G').width = 5.3;
-      postSheet.getColumn('I').width = 18;
-      postSheet.getColumn('J').width = 18.3;
-      postSheet.getColumn('K').width = 5.3;
+      postSheet.getColumn('A').width = 25;
+      postSheet.getColumn('B').width = 14.3;
+      postSheet.getColumn('C').width = 8.4;
+      postSheet.getColumn('E').width = 25;
+      postSheet.getColumn('F').width = 14.3;
+      postSheet.getColumn('G').width = 8.4;
+      postSheet.getColumn('I').width = 25;
+      postSheet.getColumn('J').width = 14.3;
+      postSheet.getColumn('K').width = 8.4;
 
       postSheet.getRow(3).height = 21;
       postSheet.getRow(18).height = 21;
@@ -409,7 +409,7 @@ export class VjhsDatabaseService {
       this.getPosts().forEach((postName) => {
         let row = postSheet.getRow(rowNumber);
         let postData = data['global_votes'][postName];
-        row.getCell(colNum).value = postName; // Title
+        row.getCell(colNum).value = postName // Title
         row.getCell(colNum).font = {
           bold: true,
           name: "Bahnschrift",
@@ -426,7 +426,11 @@ export class VjhsDatabaseService {
           if(key=="total")  return;
           candidates.push({name: key, votes: postData[key]});
         });
-        candidates.sort((a,b) => b.votes - a.votes);
+        candidates.sort((a,b) => {
+          if(a.name == "nota")  return 1;
+          else if (b.name == "nota")  return -1;
+          return (b.votes - a.votes);
+        });
 
         for(let i=0; i<11; ++i)
         {
@@ -438,9 +442,18 @@ export class VjhsDatabaseService {
             continue;
           }
           
+          if(candidates[i].name == "nota")
+            candidates[i].name = "NOTA";
           row.getCell(colNum).value = candidates[i].name;
           row.getCell(colNum+1).value = candidates[i].votes;
-          row.getCell(colNum+2).value = i+1;
+
+          if(candidates[i].name == "NOTA")
+          {
+            row.getCell(colNum+2).value = " - ";
+            row.getCell(colNum+2).alignment = {'horizontal':'center'}
+          }
+          else
+            row.getCell(colNum+2).value = i+1;
         }
         row = postSheet.getRow(rowNumber+13);
         row.getCell(colNum).value = "Elected Candidate: "+candidates[0].name;
