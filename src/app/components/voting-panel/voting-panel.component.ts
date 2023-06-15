@@ -121,7 +121,7 @@ export class VotingPanelComponent implements OnInit, AfterContentInit {
   {
     this.maxSelection = 1;
     this.selectNavbar(1);
-    //this.docElem.requestFullscreen();
+    this.docElem.requestFullscreen();
   }
 
   resetPanels()
@@ -134,8 +134,6 @@ export class VotingPanelComponent implements OnInit, AfterContentInit {
 
   onFullscreenChanged(event: Event)
   {
-    if(!['red', 'blue', 'green', 'yellow'].includes(this.houseText.toLowerCase()))
-      this.houseText = 'red';
     this.db_service.setHouseFullscreen(this.houseText, document.fullscreenElement!=null);
     if(!document.fullscreenElement)
     {
@@ -164,6 +162,9 @@ export class VotingPanelComponent implements OnInit, AfterContentInit {
   }
 
   ngAfterContentInit(): void {
+    if(!['red', 'blue', 'green', 'yellow'].includes(this.houseText.toLowerCase()))
+      return;
+    
     this.docElem = document.documentElement;
     this.docElem.addEventListener("fullscreenchange", (event) => this.onFullscreenChanged(event));
 
