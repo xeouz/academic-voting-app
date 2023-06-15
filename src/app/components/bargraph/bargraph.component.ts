@@ -59,7 +59,7 @@ export class BargraphComponent implements OnInit, AfterViewInit {
     let highest = 0;
     let highestData = 0;
     Object.keys(data).forEach((key, index, array) => {
-      if (key == "total")
+      if (key == "total" || key == "nota")
         return;
       
       let keystr = key;
